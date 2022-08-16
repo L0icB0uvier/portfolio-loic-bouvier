@@ -1,0 +1,24 @@
+.wrapper{
+    background-color: red;
+}
+
+.mainContainer{
+    margin-top: 50px;
+
+    margin: 0 auto;
+    max-width: var(--size-content);
+    padding: var(--size-gutter);
+}
+
+.title{
+    text-align: center;
+}
+
+.text{
+    text-align: center;
+}
+
+.infoContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

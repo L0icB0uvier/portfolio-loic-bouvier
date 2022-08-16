@@ -1,0 +1,13 @@
+.container {
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  grid-template-rows: 32px;
+  text-decoration: none;
+}
+
+.contactText {
+  color: black;
+  margin: 0;
+  text-align: left;
+  padding-left: 16px;
+}

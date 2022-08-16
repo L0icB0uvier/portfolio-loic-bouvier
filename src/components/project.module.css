@@ -1,0 +1,5 @@
+.mainContainer {
+  margin: 0 auto;
+  max-width: var(--size-content);
+  padding: 10px 0;
+}

@@ -1,0 +1,9 @@
+.wrapper{
+    background-color: chartreuse;
+}
+
+.mainContainer{
+    margin: 0 auto;
+    max-width: var(--size-content);
+    padding: var(--size-gutter);
+}

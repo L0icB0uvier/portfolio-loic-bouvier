@@ -1,4 +1,14 @@
-.container {
+.wrapper {
+  background-color: black;
+}
+
+.mainContainer {
+  margin: 0 auto;
+  max-width: var(--size-content);
+  padding: var(--size-gutter);
+}
+
+.projectsContainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 5%;
@@ -11,7 +21,7 @@
   height: 200px;
   background-color: rgba(128, 128, 128, 0.356);
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 

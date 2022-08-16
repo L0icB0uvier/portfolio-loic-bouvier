@@ -1,0 +1,14 @@
+.wrapper {
+  background-color: white;
+}
+
+.mainContainer {
+  margin: 0 auto;
+  max-width: var(--size-content);
+  padding: 10px 0;
+}
+
+.title {
+  color: black;
+  margin-bottom: 10px;
+}
