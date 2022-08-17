@@ -1,0 +1,33 @@
+.barContainer {
+  border: solid 2px red;
+}
+
+.barFill {
+  background-color: red;
+}
+
+.barFill_master {
+  max-width: 100%;
+}
+
+.barFill_very_good {
+  max-width: 80%;
+}
+
+.barFill_good {
+  max-width: 60%;
+}
+
+.barFill_medium {
+  max-width: 40%;
+}
+
+.barFill_beginer {
+  max-width: 20%;
+}
+
+.title {
+  margin: 0;
+  margin-left: 10px;
+  color: white;
+}

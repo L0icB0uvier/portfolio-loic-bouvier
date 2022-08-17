@@ -7,6 +7,7 @@ import Formation from './formation';
 const CV = () => {
     return (
         <div>
+            
             <SectionTitle title="CV"/>
             <Competences />
             <Experience />

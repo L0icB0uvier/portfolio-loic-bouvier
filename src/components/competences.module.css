@@ -1,0 +1,15 @@
+.wrapper {
+  background-color: aqua;
+}
+
+.mainContainer {
+  margin: 0 auto;
+  max-width: var(--size-content);
+  padding: var(--size-gutter);
+}
+
+.skillsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px 10px;
+}

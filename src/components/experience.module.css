@@ -1,0 +1,9 @@
+.wrapper {
+  background-color: aquamarine;
+}
+
+.mainContainer {
+  margin: 0 auto;
+  max-width: var(--size-content);
+  padding: var(--size-gutter);
+}
