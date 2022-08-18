@@ -3,7 +3,7 @@ import * as ExperienceStyles from "./experience.module.css"
 
 const Experience = () => {
   return (
-    <section className={ExperienceStyles.wrapper}>
+    <div className={ExperienceStyles.wrapper}>
       <div className={ExperienceStyles.mainContainer}>
         <h1>Expérience</h1>
         <p>
@@ -27,7 +27,7 @@ const Experience = () => {
           formation en explorant tous les aspets du développement sous Unity.{" "}
         </p>
       </div>
-    </section>
+    </div>
   )
 }
 

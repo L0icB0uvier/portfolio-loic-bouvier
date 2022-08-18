@@ -1,14 +1,19 @@
 .wrapper {
-  background-color: white;
+  background-color: red;
+  height: 150px;
 }
 
 .mainContainer {
   margin: 0 auto;
   max-width: var(--size-content);
-  padding: 10px 0;
+  padding: 0 var(--size-gutter);
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 .title {
-  color: black;
+  color: white;
+  font-size: 5rem;
   margin-bottom: 10px;
 }

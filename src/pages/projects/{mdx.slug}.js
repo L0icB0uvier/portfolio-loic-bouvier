@@ -47,13 +47,13 @@ const ProjectPage = ({ data }) => {
   return (
     <Layout pageTitle="Project Page">
       <div className={ProjectPageStyles.mainContainer}>
-        <h1>{data.mdx.frontmatter.name}</h1>
         <Video
           videoSrcURL={data.mdx.frontmatter.video}
           videoTitle={data.mdx.frontmatter.video_title}
         />
-
-        <h3>{data.mdx.frontmatter.description}</h3>
+        <h1 className={ProjectPageStyles.projectTitle}>
+          {data.mdx.frontmatter.name}
+        </h1>
         <MDXRenderer>{data.mdx.body}</MDXRenderer>
         <Slider {...settings}>
           {data.mdx.frontmatter.galery_images.map(node => (

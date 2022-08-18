@@ -3,7 +3,7 @@ import * as FormationStyles from "./formation.module.css"
 
 const Formation = () => {
   return (
-    <section className={FormationStyles.wrapper}>
+    <div className={FormationStyles.wrapper}>
       <div className={FormationStyles.mainContainer}>
         <h1>Formation</h1>
         <p>
@@ -36,7 +36,7 @@ const Formation = () => {
           Engine Architecture" de Jason Gregory.
         </p>
       </div>
-    </section>
+    </div>
   )
 }
 

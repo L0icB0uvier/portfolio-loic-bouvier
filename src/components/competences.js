@@ -4,7 +4,7 @@ import * as CompetenceStyles from "./competences.module.css"
 
 const Competences = () => {
   return (
-    <section className={CompetenceStyles.wrapper}>
+    <div className={CompetenceStyles.wrapper}>
       <div className={CompetenceStyles.mainContainer}>
         <h1>Compétences</h1>
         <p>
@@ -54,7 +54,7 @@ const Competences = () => {
           <SkillBar skillName="Diagram de Gant" skillProcifiency={100} />
         </div>
       </div>
-    </section>
+    </div>
   )
 }
 

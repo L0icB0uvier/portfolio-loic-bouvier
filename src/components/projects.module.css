@@ -1,5 +1,15 @@
 .wrapper {
-  background-color: black;
+  background-color: white;
+}
+
+.wrapper::before {
+  content: "";
+  display: block;
+  height: 56px;
+  margin-top: -56px;
+  visibility: hidden;
+  position: relative;
+  z-index: -1;
 }
 
 .mainContainer {
@@ -8,21 +18,40 @@
   padding: var(--size-gutter);
 }
 
-.projectsContainer {
+.projectsWrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 5%;
   align-content: center;
   justify-content: center;
 }
 
 .project {
-  padding: 10%;
-  height: 200px;
+  padding: 0;
+  width: 512;
+  height: 400;
   background-color: rgba(128, 128, 128, 0.356);
+
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.projectContainer {
   display: flex;
   align-items: flex-start;
-  justify-content: center;
+  justify-items: center;
+}
+
+.projectTitle {
+  margin: auto;
+  text-align: center;
+  color: black;
+}
+
+.projectDescription {
+  margin: auto;
+  text-align: center;
+  color: black;
 }
 
 .link {

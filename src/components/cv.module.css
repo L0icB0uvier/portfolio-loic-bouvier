@@ -1,0 +1,12 @@
+.wrapper {
+}
+
+.wrapper::before {
+  content: "";
+  display: block;
+  height: 56px;
+  margin-top: -56px;
+  visibility: hidden;
+  position: relative;
+  z-index: -1;
+}

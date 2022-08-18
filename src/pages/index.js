@@ -1,7 +1,7 @@
 import * as React from "react"
 import Projects from "../components/projects"
 import Contact from "../components/contact"
-import Introduction from "../components/introduction"
+import About from "../components/introduction"
 import CV from "../components/CV"
 
 import Layout from "../components/layout"
@@ -11,7 +11,7 @@ import * as styles from "../components/index.module.css"
 const IndexPage = ({ data }) => (
   <Layout>
     <Seo title="Home" />
-    <Introduction />
+    <About />
     <Projects />
     <CV />
     <Contact />

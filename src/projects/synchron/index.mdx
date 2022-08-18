@@ -2,30 +2,91 @@
 type: "project"
 name: "Synchron"
 description: "Puzzle/Adventure 2D game"
-image: "./SYNCHRON.png"
+image: "./game-logo-small.png"
 image_alt: "Synchron Logo"
 
 video: https://www.youtube.com/embed/AS8hvQkYmRk?
 video_title: "Synchron Gameplay Footage"
 
 galery-images:
-  - image: "Nmi02.png"
-    image_alt: "Enemy"
-  - image: "Nmi04_01.png"
-    image_alt: "Enemy attack"
-  - image: "Nmi04_02.png"
-    image_alt: "Enemy manipulation"
-  - image: "Tp04.png"
-    image_alt: "TP"
+  - image: "./gallery/connect-laser.webp"
+    image_alt: "Connect Laser"
+  - image: "./gallery/connect-laser2.webp"
+    image_alt: "Connect Laser 2"
+  - image: "./gallery/connect-laser3.webp"
+    image_alt: "Connect Laser 3"
+  - image: "./gallery/dark-chasm.webp"
+    image_alt: "Dark Chasm"
+  - image: "./gallery/distract-sentry.webp"
+    image_alt: "Distract Sentry"
+  - image: "./gallery/distract-sentry2.webp"
+    image_alt: "Distract Sentry 2"
+  - image: "./gallery/distract-sentry3.webp"
+    image_alt: "Distract Sentry 3"
+  - image: "./gallery/exit.webp"
+    image_alt: "Exit"
+  - image: "./gallery/raise-bridge.webp"
+    image_alt: "Raise Bridge"
+  - image: "./gallery/sentry-FOV.webp"
+    image_alt: "Sentry FOV"
+  - image: "./gallery/teleport-through-pipes.webp"
+    image_alt: "Teleport through pipes"
+  - image: "./gallery/teleportation-blocked.webp"
+    image_alt: "Teleportation blocked"
+  - image: "./gallery/welcome-to-district.webp"
+    image_alt: "Welcome to district"
 ---
 
-Synchron is a narrative driven puzzle game set in a science fiction universe currently in development.
+## Présentation du projet
 
-It is being developped by a team of two in which I work as Game designer, Lead programer, Technical Artist, Level designer, UI Designer and Lead QA
-Gameplay.
+Synchron est le premier projet sérieux à ambition commerciale sur lequel j'ai travaillé.
+Il a été développé par Baptiste Janin (Game Artist/Game Designer) et moi même pendant près de 5 ans.
+C'est en travaillant sur ce projet que j'ai fait mes armes sur Unity et que j'ai appris le développement de jeu en général.
 
-Synchron gameplay relies on controling two characters simultaneously using a controller splitted in two (one side per character).
+## Description du projet
 
-Both characters possess unique abilities that you must use in synergy in order to solve challenging puzzles.
+Synchron est jeu d'aventure/puzzle dans lequel le joueur contrôle deux personnages simultannément à l'aide d'une manette virtuellement divisée en deux.
 
-Gameplay is ponctuated by narrative sequences that tell a original science fiction / cosmic horror story.
+Les personnages sont nommés Hicks et Skullface. L'un est humanoïde et l'autre Bio mécanique.
+Chaque personnage possède des capacités qui lui sont propre et le joueur doit utiliser ces dernières en synergie afin d'avancer dans l'aventure.
+
+Parmis les mécaniques de gameplay principales, on trouve:
+
+- La capacité des personnages de se téléporter de l'un à l'autre (cette mécanique étant soumise à des contraintes liés au positionnement des personnages.)
+- La capacité d'un personnage à flotter au dessus du sol et à traverser les gouffres à l'aide d'un boost.
+- La possibilité d'intéragir avec un grand nombre d'élements de l'univers afin d'ouvrir des passages, de divertir des ennemis, d'alimenter en énergie des systèmes, etc...
+
+Toutes ces mécaniques nous permettent de créer des puzzle complexes dans l'esprit des puzzle de "The Talos Principle" ou "Braid".
+
+Côté histoire et Lore, le jeu prend place dans une mégastructure inspirée par l'univers de Blame!.
+Le monde dans lequel les personnages évoluent est mystérieux par nature et le joueur sera entrainer dans une aventure qui lui fournira des clés de lecture permettant d'interpréter cet univers riche et complexe.
+
+## Mon rôle sur le projet
+
+Sur ce projet, j'ai rempli un grand nombre de rôles:
+
+- Lead Programmeur
+  - A l'aide des Scriptable Objects et du system d'Adressables de Unity, j'ai créé une architecture de code robuste, optimisée et maintenanable.
+  - J'ai intégré et modifié des assets développés par des tiers.
+  - J'ai codé des outils afin de faciliter et d'accélérer le développement du jeu et le workflow de l'artiste.
+  - J'ai écrit des algoryhtmes complexes (principalement pour l'IA du jeu).
+- Artiste technique
+  - Je me suis assuré que l'artiste créé des assets répondants aux contraintes techniques liées au développement de jeu.
+  - J'ai importé et configuré les assets créés par l'artiste.
+  - J'ai créé des effets visuels dans Unity à l'aide du système de particules et des shaders.
+  - J'ai facilité la création d'assets 2D à l'aide d'outil 3D.
+- Game Designer
+  - J'ai co-designé et prototypé un grand nombre d'idées afin de trouver un concept innovant et fun.
+  - J'ai étudié le game design et j'ai cherché à intégrer au mieux les différents concepts appliquables à notre projet.
+  - J'ai conceptualisé les idées dans un document de Game Design.
+- Level Designer
+  - A partir d'un nombre de mécaniques restraintes, j'ai créé une variété de niveaux exploitant ces mécaniques dans différentes combinaisons.
+  - J'ai créé des niveaux de A à Z. Du whiteboxing au polish final.
+  - Au sein d'une équipe, j'ai créé une succession de niveaux de type \"tutoriel\" cohérente.
+- UI Designer
+  - J'ai expérimenté avec plusieurs approches d'UI afin de trouver celle qui permette de communiquer au joueurs les informations nécessaires le plus efficacement possible.
+  - J'ai designé un menu principal et un menu de pause permettant d'appliquer des options et de choisir les niveaux.
+- Lead QA
+  - J'ai corrigé les différents bugs inhérant au developement d'un jeu vidéo.
+  - J'ai organisé et supervisé des sessions de playtest afin de détecter les différents problèmes.
+  - J'ai mis en place des processus permettant de faciliter la correction de bugs.

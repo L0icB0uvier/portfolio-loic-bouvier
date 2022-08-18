@@ -3,3 +3,9 @@
   max-width: var(--size-content);
   padding: 10px 0;
 }
+
+.projectTitle {
+  margin-top: 50px;
+  font-size: 4rem;
+  text-align: center;
+}

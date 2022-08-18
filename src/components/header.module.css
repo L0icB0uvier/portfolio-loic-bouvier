@@ -1,0 +1,25 @@
+.wrapper {
+  margin: 0 auto;
+  padding: 0px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  position: sticky;
+  top: 0px;
+}
+
+.anchorContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.text {
+  color: white;
+  text-decoration: none;
+}
+
+.text:hover {
+  color: darkred;
+}

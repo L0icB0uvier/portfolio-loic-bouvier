@@ -2,17 +2,55 @@
 type: "project"
 name: "Primitive War"
 description: "Fight Simulator"
-image: "./SYNCHRON.png"
+image: "./game-logo.webp"
 image_alt: "Primitive war Logo"
 
-video: https://www.youtube.com/embed/AS8hvQkYmRk?
+video: https://www.youtube.com/embed/Xb2dnIk8htQ
 video_title: "Synchron Gameplay Footage"
 
 galery-images:
-    - image: "Nmi04_01.png"
-      image_alt: "placeholder"
+  - image: "./gallery/army-customization.webp"
+    image_alt: "Army customization"
+  - image: "./gallery/menu.webp"
+    image_alt: "Main menu"
+  - image: "./gallery/battle_1.webp"
+    image_alt: Battle 1"
+  - image: "./gallery/battle_2.webp"
+    image_alt: "Battle 2"
+  - image: "./gallery/victory.webp"
+    image_alt: "Victory"
 ---
 
-Primitive War is a fight simulator created for a technical test. It lets you customize armies and then let them fight to death.
+## Description du projet
 
-It was created in 5 days.
+Primitive War est un simulateur de combat réalisé dans le cadre d'un test technique. Le jeu a été crée sous Unity en 5 jours.
+
+Chaque armée est composée d'unités qui possèdent quatre caractéristiques:
+
+- HP: Le nombre de points de vie de l'unité
+- SPD: La vitesse de déplacement de l'unité
+- ATK: Les dégats infligés par l'unité à chaque attaque
+- ATKSPD: La vitesse d'attaque (plus la valeur est haute et plus l'unité attaque lentement)
+
+Ces caractéristiques sont déterminées pas la **forme**, la **couleur** et la **taille** de chaque unités.
+Ces derniers peuvent être randomisé par le joueur à travers le menu ou simplement en cliquant sur une unité.
+Le joueur peut également changer la taille et la disposition de chaque armée, ce qui permet de tester plusieurs configurations.
+
+Une fois, les armées crées, le joueur clique sur "Start Battle" et le armées s'affrontent jusqu'à ce qu'il n'en reste plus qu'une qui sera déclaré vainqueur.
+
+Il est possible d'ajouter autant d'armées que souhaité et celles-ci s'affronteront en mode free for all.
+
+## Architecture du jeu
+
+L'architecture du code suit l'architecture présenté par Ryan Hipple durant la conférence à l'Unite Austin 2017 - Game Artchitecture with Scriptable Objects. Cette dernière repose principalement sur les Scriptable objects, autant pour la gestion des données que pour la communication entre les scripts.
+Je fais également un usage intensif des UnityEvents afin de découpler au maximum les différents composants et permettre d'assure le principe de résponsabilité unique (S.O.L.I.D principles).
+
+Ce projet n'utilise aucun Singleton et aucun script n'utilise "DontDestroyOnLoad". J'essayer autant que possible de me passer de ces deux outils, vu leur tendance à causer des problèmes dès que le projet grandi.
+
+L'architecture actuelle permet d'ajouter facilement des nouvelles mécaniques tel que de nouvelles caractéristiques, formes, couleurs et taille.
+
+## Mon rôle sur le projet
+
+J'ai réalisé ce projet seul de A à Z. Le plus gros du travail a été sur la partie programmation. 
+J'ai également travaillé brièvement sur Blender afin de modifier les UV des sphères. 
+Finalement j'ai crée des textures pour les matériaux et l'interface utilisateur du jeu.

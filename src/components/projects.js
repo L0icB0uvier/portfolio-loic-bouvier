@@ -15,7 +15,7 @@ const Projects = () => {
             image_alt
             image {
               childImageSharp {
-                gatsbyImageData(width: 256)
+                gatsbyImageData(width: 512)
               }
             }
           }
@@ -27,14 +27,14 @@ const Projects = () => {
   `)
 
   return (
-    <div className={ProjectsStyles.wrapper}>
+    <section id="portfolio" className={ProjectsStyles.wrapper}>
       <SectionTitle title="Portfolio" />
       <div className={ProjectsStyles.mainContainer}>
         <p>
           Voici les projets sur lesquels j'ai travaillé ces dernières années et
           qui m'ont permis d'apprendre le dévelopement de jeux sur Unity.
         </p>
-        <div className={ProjectsStyles.projectsContainer}>
+        <div className={ProjectsStyles.projectsWrapper}>
           {data.allMdx.nodes.map(node => (
             <article
               className={ProjectsStyles.project}
@@ -51,15 +51,19 @@ const Projects = () => {
                     }
                     alt={node.frontmatter.image_alt}
                   />
-                  <h2>{node.frontmatter.name}</h2>
-                  <p>{node.frontmatter.description}</p>
+                  <h2 className={ProjectsStyles.projectTitle}>
+                    {node.frontmatter.name}
+                  </h2>
+                  <p className={ProjectsStyles.projectDescription}>
+                    {node.frontmatter.description}
+                  </p>
                 </div>
               </Link>
             </article>
           ))}
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

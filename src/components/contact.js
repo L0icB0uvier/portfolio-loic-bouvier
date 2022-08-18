@@ -27,7 +27,7 @@ const Contact = () => {
     }
   `)
   return (
-    <div className={ContactStyles.wrapper}>
+    <section id="contact" className={ContactStyles.wrapper}>
       <div className={ContactStyles.mainContainer}>
         <h1 className={ContactStyles.title}>Contact</h1>
         <p className={ContactStyles.text}>
@@ -54,7 +54,7 @@ const Contact = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 
