@@ -1,9 +1,50 @@
-.wrapper{
-    background-color: chartreuse;
+.wrapper {
+  background-color: var(--color-band);
 }
 
-.mainContainer{
-    margin: 0 auto;
-    max-width: var(--size-content);
-    padding: var(--size-gutter);
+.mainContainer {
+  margin: 0 auto;
+  max-width: var(--size-content);
+  padding: var(--size-gutter);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0px;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+  color: var(--text-color-band);
+}
+
+.description {
+  text-align: center;
+  color: var(--text-color-band);
+}
+
+.contactButton {
+  border: solid 2px;
+  border-color: var(--text-color-band);
+  border-radius: 15px;
+  width: 200px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.contactButton:hover{
+  border: solid 2px;
+  border-color: var(--text-color-band);
+}
+
+.contactButtonText {
+  color: var(--text-color-band);
+  text-align: center;
+  margin: 5px 0;
+}
+
+.contactButton:hover .contactButtonText{
+  color: var(--text-color-band);
 }

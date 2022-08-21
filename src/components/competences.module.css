@@ -1,5 +1,5 @@
 .wrapper {
-  background-color: aqua;
+  background-color: var(--color-code-bg-primary);
 }
 
 .mainContainer {
@@ -12,4 +12,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 5px 10px;
+}
+
+.title{
+  text-align: center;
 }

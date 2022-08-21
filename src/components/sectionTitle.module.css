@@ -1,5 +1,5 @@
 .wrapper {
-  background-color: red;
+  background-color: var(--color-band);
   height: 150px;
 }
 
@@ -9,11 +9,13 @@
   padding: 0 var(--size-gutter);
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 100%;
 }
 
 .title {
-  color: white;
-  font-size: 5rem;
+  color: var(--text-color-band);
+  font-size: 4rem;
   margin-bottom: 10px;
+  text-align: center;
 }

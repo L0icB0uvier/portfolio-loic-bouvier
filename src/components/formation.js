@@ -5,7 +5,7 @@ const Formation = () => {
   return (
     <div className={FormationStyles.wrapper}>
       <div className={FormationStyles.mainContainer}>
-        <h1>Formation</h1>
+        <h2 className={FormationStyles.title}>Formation</h2>
         <p>
           Diplomé en 2016 de la Business school ICD Paris en en International
           Business Development, je voulais tenter l'entreprenariat. L'industrie

@@ -5,7 +5,7 @@ const Experience = () => {
   return (
     <div className={ExperienceStyles.wrapper}>
       <div className={ExperienceStyles.mainContainer}>
-        <h1>Expérience</h1>
+        <h2 className={ExperienceStyles.title}>Expérience</h2>
         <p>
           Passioné de jeux vidéo depuis mon plus jeune age, c'est tardivement
           que je me suis intéressé au développement de jeux. Je suis ainsi parti

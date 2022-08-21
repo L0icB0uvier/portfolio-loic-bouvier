@@ -1,24 +1,27 @@
-.wrapper{
-    background-color: red;
+.wrapper {
+  background-color: var(--color-band);
 }
 
-.mainContainer{
-    margin-top: 50px;
+.mainContainer {
+  margin-top: 50px;
 
-    margin: 0 auto;
-    max-width: var(--size-content);
-    padding: var(--size-gutter);
+  margin: 0 auto;
+  max-width: var(--size-content);
+  padding: var(--size-gutter);
 }
 
-.title{
-    text-align: center;
+.title {
+  text-align: center;
+  color: var(--text-color-band);
+  font-size: 4rem;
 }
 
-.text{
-    text-align: center;
+.text {
+  text-align: center;
+  color: var(--text-color-band);
 }
 
-.infoContainer{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.infoContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }

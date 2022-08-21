@@ -1,8 +1,4 @@
-.wrapper {
-  background-color: white;
-}
-
-.wrapper::before {
+.sectionWrapper::before {
   content: "";
   display: block;
   height: 56px;
@@ -10,6 +6,11 @@
   visibility: hidden;
   position: relative;
   z-index: -1;
+}
+
+.containerWrapper {
+  background-color: var(--color-code-bg-primary);
+  padding-bottom: 100px;
 }
 
 .mainContainer {

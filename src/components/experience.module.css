@@ -1,9 +1,13 @@
 .wrapper {
-  background-color: aquamarine;
+  background-color: var(--color-code-bg-secondary);
 }
 
 .mainContainer {
   margin: 0 auto;
   max-width: var(--size-content);
   padding: var(--size-gutter);
+}
+
+.title{
+  text-align: center;
 }

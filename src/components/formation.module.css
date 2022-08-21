@@ -1,9 +1,13 @@
 .wrapper {
-  background-color: bisque;
+  background-color: var(--color-code-bg-primary);
 }
 
 .mainContainer {
   margin: 0 auto;
   max-width: var(--size-content);
   padding: var(--size-gutter);
+}
+
+.title {
+  text-align: center;
 }
