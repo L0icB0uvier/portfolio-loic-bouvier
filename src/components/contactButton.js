@@ -1,8 +1,10 @@
 import React from "react"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import * as ContactButtonStyles from "./contactButton.module.css"
 
 const ContactButton = ({ url, img, image_alt, name }) => {
+
+  
   return (
     <a
       href={url}

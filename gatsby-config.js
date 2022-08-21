@@ -21,13 +21,6 @@ module.exports = {
         path: `${__dirname}/src/projects`,
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `projectPages`,
-        path: `${__dirname}/src/contactInfo`,
-      },
-    },
     `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-transformer-remark`,
