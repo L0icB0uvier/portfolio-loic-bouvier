@@ -20,5 +20,13 @@
 }
 
 @media screen and (--large-screen) {
-  
+  .sectionWrapper::before {
+    content: "";
+    display: block;
+    height: 51px;
+    margin-top: -51px;
+    visibility: hidden;
+    position: relative;
+    z-index: -1;
+  }
 }

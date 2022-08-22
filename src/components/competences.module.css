@@ -16,7 +16,7 @@
 }
 
 .title {
-  text-align: center;
+  text-align: left;
 }
 
 @media screen and (--large-screen) {

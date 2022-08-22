@@ -9,7 +9,7 @@ import ColoredLine from "./ColoredLine"
 const CV = () => {
   return (
     <section id="CV" className={CVStyles.sectionWrapper}>
-      <div className={CVStyles.mainContainer}>
+      <div>
         <Competences />
         <Experience />
         <Formation />

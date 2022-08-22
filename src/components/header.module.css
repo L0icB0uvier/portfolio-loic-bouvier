@@ -46,3 +46,13 @@
   background: none;
   margin-right: 15px;
 }
+
+@media screen and (--large-screen) {
+  .anchorContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    padding-right: 30px;
+    align-items: center;
+  }
+}
