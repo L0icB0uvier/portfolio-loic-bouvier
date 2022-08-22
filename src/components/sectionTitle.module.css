@@ -15,7 +15,33 @@
 
 .title {
   color: var(--text-color-band);
-  font-size: 4rem;
+  font-size: 3rem;
   margin-bottom: 10px;
   text-align: center;
+}
+
+@media screen and (--large-screen) {
+  .wrapper {
+    background: none;
+    height: 150px;
+    position: absolute;
+    left: -350px;
+  }
+
+  .mainContainer {
+    margin: 0 auto;
+    max-width: var(--size-content);
+    padding: 0 var(--size-gutter);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height:fit-content;
+  }
+
+  .title {
+    color: var(--text-color-band);
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-align: right;
+  }
 }

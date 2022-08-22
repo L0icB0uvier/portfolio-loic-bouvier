@@ -1,11 +1,13 @@
 import React from "react"
 import SkillBar from "./skillBar"
 import * as CompetenceStyles from "./competences.module.css"
+import SectionTitle from "./sectionTitle"
 
 const Competences = () => {
   return (
     <div className={CompetenceStyles.wrapper}>
       <div className={CompetenceStyles.mainContainer}>
+        <SectionTitle title="03 - CV" />
         <h2 className={CompetenceStyles.title}>Compétences</h2>
         <p>
           Mon expérience en tant que dévelopeur indépendant m'a apporté un grand

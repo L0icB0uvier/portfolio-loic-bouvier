@@ -1,16 +1,16 @@
 .sectionWrapper::before {
   content: "";
   display: block;
-  height: 56px;
-  margin-top: -56px;
+  height: 195px;
+  margin-top: -195px;
   visibility: hidden;
   position: relative;
   z-index: -1;
 }
 
 .containerWrapper {
-  background-color: var(--color-code-bg-primary);
-  padding-bottom: 100px;
+  background-color: var(--color-code-bg-secondary);
+  padding-bottom: 50px;
 }
 
 .mainContainer {
@@ -20,9 +20,9 @@
 }
 
 .projectsWrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   align-content: center;
   justify-content: center;
 }
@@ -55,6 +55,24 @@
   color: black;
 }
 
+.text{
+  margin-bottom: 50px;
+}
+
 .link {
   text-decoration: none;
+}
+
+@media screen and (--large-screen) {
+  .mainContainer {
+    position: relative;
+  }
+
+  .projectsWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+    align-content: center;
+    justify-content: center;
+  }
 }

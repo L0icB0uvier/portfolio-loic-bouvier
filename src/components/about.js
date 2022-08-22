@@ -1,11 +1,13 @@
 import React from "react"
 import * as AboutStyles from "./about.module.css"
+import SectionTitle from "./sectionTitle"
 
 const About = () => {
   return (
     <section id="about" className={AboutStyles.sectionWrapper}>
       <div className={AboutStyles.containerWrapper}>
         <div className={AboutStyles.mainContainer}>
+          <SectionTitle title="01 - A Propos" />
           <h2>Qui-suis je?</h2>
           <p>
             {" "}

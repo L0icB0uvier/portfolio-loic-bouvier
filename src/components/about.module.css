@@ -1,8 +1,8 @@
 .sectionWrapper::before {
   content: "";
   display: block;
-  height: 56px;
-  margin-top: -56px;
+  height: 195px;
+  margin-top: -195px;
   visibility: hidden;
   position: relative;
   z-index: -1;
@@ -16,4 +16,9 @@
   margin: 0 auto;
   max-width: var(--size-content);
   padding: var(--size-gutter);
+  position: relative;
+}
+
+@media screen and (--large-screen) {
+  
 }

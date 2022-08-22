@@ -8,7 +8,6 @@ import CV from "../components/CV"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import * as styles from "../components/index.module.css"
 
 const IndexPage = ({ data }) => (
   <Layout>

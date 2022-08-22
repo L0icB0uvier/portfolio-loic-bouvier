@@ -1,12 +1,18 @@
-.wrapper {
-}
-
-.wrapper::before {
+.sectionWrapper::before {
   content: "";
   display: block;
-  height: 56px;
-  margin-top: -56px;
+  height: 195px;
+  margin-top: -195px;
   visibility: hidden;
   position: relative;
   z-index: -1;
+}
+
+.mainContainer {
+}
+
+@media screen and (--large-screen) {
+  .mainContainer {
+    position: relative;
+  }
 }

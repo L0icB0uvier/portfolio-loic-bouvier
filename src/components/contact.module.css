@@ -1,4 +1,14 @@
-.wrapper {
+.sectionWrapper::before {
+  content: "";
+  display: block;
+  height: 195px;
+  margin-top: -195px;
+  visibility: hidden;
+  position: relative;
+  z-index: -1;
+}
+
+.containerWrapper {
   background-color: var(--color-band);
 }
 
@@ -22,6 +32,13 @@
 }
 
 .infoContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (--large-screen) {
+  .infoContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }

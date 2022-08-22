@@ -1,26 +1,48 @@
 .wrapper {
   margin: 0 auto;
-  padding: 0px 30px;
-  display: flex;
+  padding: 0px;
   align-items: center;
   justify-content: space-between;
   background-color: var(--color-header);
   position: sticky;
   top: 0px;
-  height: 56px;
+  z-index: 10;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: space-between;
 }
 
 .anchorContainer {
   display: flex;
-  flex-direction: row;
-  gap: 30px;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.homeButton {
+  text-decoration: none;
+  padding-left: 15px;
+}
+
+.homeText {
+  color: var(--text-color-header);
+  margin: 5px 0px 10px 0px;
 }
 
 .text {
   color: var(--text-color-header);
   text-decoration: none;
+  margin: 0;
+  padding-left: 16px;
 }
 
 .text:hover {
   color: darkred;
+}
+
+.menuButton {
+  border: none;
+  background: none;
+  margin-right: 15px;
 }

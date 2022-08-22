@@ -1,17 +1,19 @@
 import React from "react"
-import SectionTitle from "./sectionTitle"
+
 import Competences from "./competences"
 import Experience from "./experience"
 import Formation from "./formation"
 import * as CVStyles from "./cv.module.css"
+import ColoredLine from "./ColoredLine"
 
 const CV = () => {
   return (
-    <section id="CV" className={CVStyles.wrapper} >
-      <SectionTitle title="CV" />
-      <Competences />
-      <Experience />
-      <Formation />
+    <section id="CV" className={CVStyles.sectionWrapper}>
+      <div className={CVStyles.mainContainer}>
+        <Competences />
+        <Experience />
+        <Formation />
+      </div>
     </section>
   )
 }

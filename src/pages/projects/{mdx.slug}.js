@@ -2,12 +2,13 @@ import * as React from "react"
 import Layout from "../../components/layout"
 import { graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import Video from "../../components/video"
 import * as ProjectPageStyles from "../../components/project.module.css"
+import "../../css/slick.css"
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props
@@ -81,7 +82,7 @@ export const query = graphql`
           image_alt
           image {
             childImageSharp {
-              gatsbyImageData
+              gatsbyImageData(width: 1500)
             }
           }
         }

@@ -6,14 +6,23 @@
   margin: 0 auto;
   max-width: var(--size-content);
   padding: var(--size-gutter);
+  position: relative;
 }
 
 .skillsContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 5px 10px;
 }
 
-.title{
+.title {
   text-align: center;
+}
+
+@media screen and (--large-screen) {
+  .skillsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px 10px;
+  }
 }

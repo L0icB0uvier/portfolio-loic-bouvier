@@ -1,13 +1,13 @@
 import React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import * as ProjectsStyles from "./projects.module.css"
 import SectionTitle from "./sectionTitle"
 
 const Projects = () => {
   const data = useStaticQuery(graphql`
     query {
-      allMdx(filter: { frontmatter: { type: { eq: "project" } } }) {
+      allMdx(sort: { order: ASC, fields: frontmatter___order }) {
         nodes {
           frontmatter {
             name
@@ -29,9 +29,9 @@ const Projects = () => {
   return (
     <section id="portfolio" className={ProjectsStyles.sectionWrapper}>
       <div className={ProjectsStyles.containerWrapper}>
-        <SectionTitle title="Portfolio" />
         <div className={ProjectsStyles.mainContainer}>
-          <p>
+          <SectionTitle title="02 - Portfolio" />
+          <p className={ProjectsStyles.text}>
             Voici les projets sur lesquels j'ai travaillé ces dernières années
             et qui m'ont permis d'apprendre le dévelopement de jeux sur Unity.
           </p>
