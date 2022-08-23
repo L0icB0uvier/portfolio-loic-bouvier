@@ -1,14 +1,6 @@
 .wrapper {
-  height: fit-content;
-  padding: 20px 0 10px 0;
-}
-
-.mainContainer {
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  height: 100%;
+  box-sizing: border-box;
+  display: none;
 }
 
 .title {
@@ -16,29 +8,25 @@
   font-size: 2rem;
   margin-bottom: 10px;
   text-align: left;
+  z-index: 20;
 }
 
 @media screen and (--large-screen) {
   .wrapper {
-    background: none;
-    height: 150px;
+    display: block;
+    width: calc((100% - var(--size-content)) / 2 - (var(--size-gutter) * 2));
     position: absolute;
-    left: -350px;
-  }
-
-  .mainContainer {
-    margin: 0 auto;
-    max-width: var(--size-content);
-    padding: 0 var(--size-gutter);
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    height: fit-content;
+    height: calc((100% - (var(--size-gutter) * 2)));
   }
 
   .title {
-    font-size: 2.5rem;
+    width: fit-content;
+    position: sticky;
+    top: 60px;
+    padding-top: 19px;
+    padding-left: 10%;
+    font-size: 2rem;
     margin-bottom: 10px;
-    text-align: right;
+    text-align: center;
   }
 }

@@ -33,7 +33,7 @@
 
 .infoWrapper {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .infoContainer {

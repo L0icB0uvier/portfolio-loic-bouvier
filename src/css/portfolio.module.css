@@ -1,3 +1,7 @@
+.sectionWrapper {
+  position: relative;
+}
+
 .sectionWrapper::before {
   content: "";
   display: block;
@@ -10,13 +14,14 @@
 
 .containerWrapper {
   background-color: var(--color-code-bg-secondary);
+  padding: var(--size-gutter);
   padding-bottom: 20px;
+  position: relative;
 }
 
 .mainContainer {
   margin: 0 auto;
   max-width: var(--size-content);
-  padding: var(--size-gutter);
   position: relative;
 }
 
@@ -66,13 +71,13 @@
 
 .handleTop {
   position: absolute;
-  top: -24px;
+  top: 175px;
   left: calc((100% / 2) - 100px);
   fill: var(--color-code-bg-secondary);
 }
 .handleBottom {
   position: absolute;
-  bottom: -44px;
+  bottom: -24px;
   left: calc((100% / 2) - 100px);
   fill: var(--color-code-bg-secondary);
 }
@@ -88,6 +93,10 @@
     z-index: -1;
   }
 
+  .containerWrapper {
+    padding: var(--size-gutter) 0;
+  }
+
   .projectsWrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -98,13 +107,13 @@
 
   .handleTop {
     position: absolute;
-    top: -32px;
+    top: 20px;
     left: calc((100% / 2) - 100px);
     fill: var(--color-code-bg-secondary);
   }
   .handleBottom {
     position: absolute;
-    bottom: -52px;
+    bottom: -32px;
     left: calc((100% / 2) - 100px);
     fill: var(--color-code-bg-secondary);
   }

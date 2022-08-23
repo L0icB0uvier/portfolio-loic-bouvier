@@ -11,3 +11,9 @@
 .title {
   text-align: left;
 }
+
+@media screen and (--large-screen) {
+  .mainContainer {
+    padding: var(--size-gutter) 0;
+  }
+}

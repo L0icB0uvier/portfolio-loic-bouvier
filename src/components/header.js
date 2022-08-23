@@ -48,7 +48,7 @@ class Header extends React.Component {
         // <div className={HeaderStyles.anchorContainer}>
         <Scrollspy
           className={HeaderStyles.anchorContainer}
-          offset={-60}
+          offset={isMobile ? -200 : -60}
           items={["about", "portfolio", "resume", "contact"]}
           currentClassName={HeaderStyles.active}
         >

@@ -9,7 +9,7 @@ const Competences = () => {
   return (
     <div className={CompetenceStyles.wrapper}>
       <div className={CompetenceStyles.mainContainer}>
-        <SectionTitle title="03 - CV" />
+        {/* <SectionTitle title="03 - CV" /> */}
         <ResumeSectionTitle title="Compétences" />
         <p>
           Mon expérience en tant que dévelopeur indépendant m'a apporté un grand

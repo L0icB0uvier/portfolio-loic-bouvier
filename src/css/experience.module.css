@@ -28,6 +28,10 @@
 }
 
 @media screen and (--large-screen) {
+  .mainContainer {
+    padding: var(--size-gutter) 0;
+  }
+
   .handleTop {
     position: absolute;
     top: 0px;

@@ -18,7 +18,14 @@
     position: relative;
     z-index: -1;
   }
-  
+
+  .containerWrapper {
+    padding: var(--size-gutter) 0;
+  }
+
+  .sectionWrapper {
+    position: relative;
+  }
 
   .mainContainer {
     position: relative;

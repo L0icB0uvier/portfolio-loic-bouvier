@@ -1,7 +1,7 @@
 import React from "react"
 import * as ContactButtonStyles from "../css/contactButton.module.css"
 
-const ContactButton = ({ url, img, image_alt, name, svg }) => {
+const ContactButton = ({ url, name, svg }) => {
   return (
     <a
       href={url}

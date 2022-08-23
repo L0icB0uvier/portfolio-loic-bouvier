@@ -10,12 +10,13 @@
 
 .containerWrapper {
   background-color: var(--color-code-bg-primary);
+  padding: var(--size-gutter);
+  position: relative;
 }
 
 .mainContainer {
   margin: 0 auto;
   max-width: var(--size-content);
-  padding: var(--size-gutter);
   position: relative;
 }
 
@@ -28,5 +29,9 @@
     visibility: hidden;
     position: relative;
     z-index: -1;
+  }
+
+  .containerWrapper {
+    padding: var(--size-gutter) 0;
   }
 }
