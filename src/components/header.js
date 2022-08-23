@@ -45,7 +45,6 @@ class Header extends React.Component {
     let menuButtons
     if (isMobile === false || showNav) {
       menuButtons = (
-        // <div className={HeaderStyles.anchorContainer}>
         <Scrollspy
           className={HeaderStyles.anchorContainer}
           offset={isMobile ? -200 : -60}
@@ -88,8 +87,6 @@ class Header extends React.Component {
             <h2 className={HeaderStyles.sectionLinkText}>Contact</h2>
           </Link>
         </Scrollspy>
-
-        // </div>
       )
     }
 

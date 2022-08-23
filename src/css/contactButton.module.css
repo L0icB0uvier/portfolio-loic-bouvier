@@ -2,7 +2,14 @@
   display: grid;
   grid-template-columns: 32px 1fr;
   grid-template-rows: 32px;
+  width: fit-content;
   text-decoration: none;
+  transition: all 0.5s;
+  align-items: center;
+}
+
+.container:hover {
+  transform: translate(10px);
 }
 
 .contactText {
@@ -10,5 +17,9 @@
   margin: 0;
   text-align: left;
   padding-left: 16px;
+  font-weight: 900;
 }
 
+.container:hover .contactText {
+  color: var(--text-color-band-hover);
+}

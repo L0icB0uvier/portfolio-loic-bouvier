@@ -18,6 +18,33 @@
   margin: 0 auto;
   max-width: var(--size-content);
   position: relative;
+  margin-bottom: 50px;
+}
+
+.downloadResumeButton {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  background-color: var(--color-band);
+  height: 64px;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: all .5s;
+}
+
+.downloadResumeButton:hover{
+  background-color: #ff000d;
+  transform: scale(1.1);
+}
+
+.resumeButtonText {
+  height: fit-content;
+  width: fit-content;
+  text-align: center;
+  color: var(--text-color-band);
+  margin: 0;
 }
 
 @media screen and (--large-screen) {

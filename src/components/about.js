@@ -1,3 +1,4 @@
+import { Link } from "gatsby"
 import React from "react"
 import * as AboutStyles from "../css/about.module.css"
 import SectionTitle from "./sectionTitle"
@@ -31,6 +32,13 @@ const About = () => {
               expérience m'a amener à développer une vaste connaissance de tous
               les aspects du développement d'un jeu.
             </p>
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              className={AboutStyles.downloadResumeButton}
+            >
+              <h3 className={AboutStyles.resumeButtonText}>Télécharger mon CV</h3>
+            </a>
           </div>
         </div>
       </div>

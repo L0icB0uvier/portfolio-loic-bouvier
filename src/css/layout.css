@@ -9,11 +9,13 @@
 
   --color-code-bg-primary: #ffffff;
   --color-code-bg-secondary: #f5f3f4;
-  --color-band: #ff3f00;
+  --color-band: #2ec4b6;
+  
   --color-header: #161a1d;
   --text-color: #000000;
   --text-color-header: #ffffff;
   --text-color-band: white;
+  --text-color-band-hover: #ffbf69;
   --text-section-title: #000000;
 
   --color-code: #8a6534;
