@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import * as HeaderStyles from "../css/header.module.css"
+import Scrollspy from "react-scrollspy"
 
 class Header extends React.Component {
   constructor(props) {
@@ -30,7 +31,7 @@ class Header extends React.Component {
 
   componentDidMount() {
     window.addEventListener("resize", this.handleResize)
-    this.handleResize();
+    this.handleResize()
   }
 
   componentWillUnmount() {
@@ -44,20 +45,51 @@ class Header extends React.Component {
     let menuButtons
     if (isMobile === false || showNav) {
       menuButtons = (
-        <div className={HeaderStyles.anchorContainer}>
-          <Link to="/#about" className={HeaderStyles.text}>
-            <h2 className={HeaderStyles.text}>A propos</h2>
+        // <div className={HeaderStyles.anchorContainer}>
+        <Scrollspy
+          className={HeaderStyles.anchorContainer}
+          offset={-60}
+          items={["about", "portfolio", "resume", "contact"]}
+          currentClassName={HeaderStyles.active}
+        >
+          <Link
+            to="/#about"
+            className={HeaderStyles.sectionLink}
+            activeClassName={HeaderStyles.active}
+            partiallyActive={true}
+          >
+            <h2 className={HeaderStyles.sectionLinkText}>A propos</h2>
           </Link>
-          <Link to="/#portfolio" className={HeaderStyles.text}>
-            <h2 className={HeaderStyles.text}>Portfolio</h2>
+
+          <Link
+            to="/#portfolio"
+            className={HeaderStyles.sectionLink}
+            activeClassName={HeaderStyles.active}
+            partiallyActive={true}
+          >
+            <h2 className={HeaderStyles.sectionLinkText}>Portfolio</h2>
           </Link>
-          <Link to="/#CV" className={HeaderStyles.text}>
-            <h2 className={HeaderStyles.text}>CV</h2>
+
+          <Link
+            to="/#resume"
+            className={HeaderStyles.sectionLink}
+            activeClassName={HeaderStyles.active}
+            partiallyActive={true}
+          >
+            <h2 className={HeaderStyles.sectionLinkText}>CV</h2>
           </Link>
-          <Link to="/#contact" className={HeaderStyles.text}>
-            <h2 className={HeaderStyles.text}>Contact</h2>
+
+          <Link
+            to="/#contact"
+            className={HeaderStyles.sectionLink}
+            activeClassName={HeaderStyles.active}
+            partiallyActive={true}
+          >
+            <h2 className={HeaderStyles.sectionLinkText}>Contact</h2>
           </Link>
-        </div>
+        </Scrollspy>
+
+        // </div>
       )
     }
 
@@ -85,19 +117,20 @@ class Header extends React.Component {
       }
 
       layout = (
-        <div><div className={HeaderStyles.mainContainer}>
-        <Link to="/" className={HeaderStyles.homeButton}>
-          <h2 className={HeaderStyles.homeText}>Loïc Bouvier</h2>
-        </Link>
-        <button
-          onClick={this.handleToggleClick}
-          className={HeaderStyles.menuButton}
-        >
-          {navButton}
-        </button>
-      </div>
-      {menuButtons}
-      </div>
+        <div>
+          <div className={HeaderStyles.mainContainer}>
+            <Link to="/" className={HeaderStyles.homeButton}>
+              <h2 className={HeaderStyles.homeText}>Loïc Bouvier</h2>
+            </Link>
+            <button
+              onClick={this.handleToggleClick}
+              className={HeaderStyles.menuButton}
+            >
+              {navButton}
+            </button>
+          </div>
+          {menuButtons}
+        </div>
       )
     }
 

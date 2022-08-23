@@ -18,6 +18,7 @@
   display: flex;
   flex-direction: column;
   gap: 0px;
+  margin: 0;
 }
 
 .homeButton {
@@ -30,14 +31,30 @@
   margin: 5px 0px 10px 0px;
 }
 
-.text {
+.sectionLinkText{
+  color: rgba(208, 214, 219, 0.87);
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.sectionLink:hover .sectionLinkText{
+  color: white;
+}
+
+.active .sectionLinkText{
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
+.sectionLink {
   color: var(--text-color-header);
   text-decoration: none;
   margin: 0;
   padding-left: 16px;
 }
 
-.text:hover {
+.sectionLink:hover {
   color: darkred;
 }
 
@@ -47,11 +64,16 @@
   margin-right: 15px;
 }
 
+.active {
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
 @media screen and (--large-screen) {
   .anchorContainer {
     display: flex;
     flex-direction: row;
-    gap: 0px;
+    gap: 20px;
     padding-right: 30px;
     align-items: center;
   }

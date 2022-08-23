@@ -2,16 +2,16 @@ import React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import SectionTitle from "./sectionTitle"
-import * as ProjectsStyles from "../css/projects.module.css"
+import * as PortfolioStyles from "../css/portfolio.module.css"
 
-const Projects = () => {
+const Portfolio = () => {
   const data = useStaticQuery(graphql`
     query {
       allMdx(sort: { order: ASC, fields: frontmatter___order }) {
         nodes {
           frontmatter {
             name
-            description
+            shortDescription
             image_alt
             image {
               childImageSharp {
@@ -27,11 +27,11 @@ const Projects = () => {
   `)
 
   return (
-    <section id="portfolio" className={ProjectsStyles.sectionWrapper}>
-      <div className={ProjectsStyles.containerWrapper}>
-        <div className={ProjectsStyles.mainContainer}>
+    <section id="portfolio" className={PortfolioStyles.sectionWrapper}>
+      <div className={PortfolioStyles.containerWrapper}>
+        <div className={PortfolioStyles.mainContainer}>
           <svg
-            className={ProjectsStyles.handleTop}
+            className={PortfolioStyles.handleTop}
             width={200}
             height={32}
             viewBox="0 0 200 32"
@@ -40,18 +40,18 @@ const Projects = () => {
             <path d="M0 32 L 200 32 L 180 0 L 20 0z"></path>
           </svg>
           <SectionTitle title="02 - Portfolio" />
-          <p className={ProjectsStyles.text}>
+          <p className={PortfolioStyles.text}>
             Voici les projets sur lesquels j'ai travaillé ces dernières années
             et qui m'ont permis d'apprendre le dévelopement de jeux sur Unity.
           </p>
-          <div className={ProjectsStyles.projectsWrapper}>
+          <div className={PortfolioStyles.projectsWrapper}>
             {data.allMdx.nodes.map(node => (
               <article
-                className={ProjectsStyles.project}
+                className={PortfolioStyles.project}
                 key={node.frontmatter.name}
               >
                 <Link
-                  className={ProjectsStyles.link}
+                  className={PortfolioStyles.link}
                   to={`/projects/${node.slug}`}
                 >
                   <div>
@@ -61,11 +61,11 @@ const Projects = () => {
                       }
                       alt={node.frontmatter.image_alt}
                     />
-                    <h2 className={ProjectsStyles.projectTitle}>
+                    <h2 className={PortfolioStyles.projectTitle}>
                       {node.frontmatter.name}
                     </h2>
-                    <p className={ProjectsStyles.projectDescription}>
-                      {node.frontmatter.description}
+                    <p className={PortfolioStyles.projectDescription}>
+                      {node.frontmatter.shortDescription}
                     </p>
                   </div>
                 </Link>
@@ -73,7 +73,7 @@ const Projects = () => {
             ))}
           </div>
           <svg
-            className={ProjectsStyles.handleBottom}
+            className={PortfolioStyles.handleBottom}
             width={200}
             height={32}
             viewBox="0 0 200 32"
@@ -87,4 +87,4 @@ const Projects = () => {
   )
 }
 
-export default Projects
+export default Portfolio

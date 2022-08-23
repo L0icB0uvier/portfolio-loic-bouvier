@@ -7,7 +7,7 @@ import * as CVStyles from "../css/cv.module.css"
 
 const CV = () => {
   return (
-    <section id="CV" className={CVStyles.sectionWrapper}>
+    <section id="resume" className={CVStyles.sectionWrapper}>
       <div>
         <Competences />
         <Experience />

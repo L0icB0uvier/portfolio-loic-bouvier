@@ -1,7 +1,7 @@
 import * as React from "react"
 import Prensentation from "../components/introduction"
 import About from "../components/about"
-import Projects from "../components/projects"
+import Portfolio from "../components/portfolio"
 import Contact from "../components/contact"
 
 import Resume from "../components/CV"
@@ -14,7 +14,7 @@ const IndexPage = ({ data }) => (
     <Seo title="Home" />
     <Prensentation />
     <About />
-    <Projects />
+    <Portfolio />
     <Resume />
     <Contact />
   </Layout>

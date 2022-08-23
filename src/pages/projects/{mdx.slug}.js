@@ -48,15 +48,18 @@ const ProjectPage = ({ data }) => {
   return (
     <Layout pageTitle="Project Page">
       <div className={ProjectPageStyles.mainContainer}>
+        <h1 className={ProjectPageStyles.projectTitle}>
+          {data.mdx.frontmatter.name}
+        </h1>
+        <h2>Présentation du projet</h2>
+        <p>{data.mdx.frontmatter.longDescription}</p>
         <Video
           videoSrcURL={data.mdx.frontmatter.video}
           videoTitle={data.mdx.frontmatter.video_title}
         />
-        <h1 className={ProjectPageStyles.projectTitle}>
-          {data.mdx.frontmatter.name}
-        </h1>
+
         <MDXRenderer>{data.mdx.body}</MDXRenderer>
-        <Slider {...settings}>
+        <Slider {...settings} className={ProjectPageStyles.slider}>
           {data.mdx.frontmatter.galery_images.map(node => (
             <GatsbyImage
               image={node.image.childImageSharp.gatsbyImageData}
@@ -75,7 +78,8 @@ export const query = graphql`
     mdx(id: { eq: $id }) {
       frontmatter {
         name
-        description
+        shortDescription
+        longDescription
         video
         video_title
         galery_images {

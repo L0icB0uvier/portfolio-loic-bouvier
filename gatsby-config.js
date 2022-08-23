@@ -67,7 +67,7 @@ module.exports = {
         postCssPlugins: [
           require(`postcss-preset-env`)({
             stage: 0,
-            importFrom: ["./src/components/layout.css"],
+            importFrom: ["./src/css/layout.css"],
           }),
         ],
       },
