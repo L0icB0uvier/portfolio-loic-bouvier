@@ -1,6 +1,6 @@
 import React from "react"
-import * as IntroductionStyles from "./introduction.module.css"
 import { Link } from "gatsby"
+import * as IntroductionStyles from "../css/introduction.module.css"
 
 const Presentation = () => {
   return (

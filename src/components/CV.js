@@ -3,8 +3,7 @@ import React from "react"
 import Competences from "./competences"
 import Experience from "./experience"
 import Formation from "./formation"
-import * as CVStyles from "./cv.module.css"
-import ColoredLine from "./ColoredLine"
+import * as CVStyles from "../css/cv.module.css"
 
 const CV = () => {
   return (

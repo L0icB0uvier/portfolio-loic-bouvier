@@ -7,7 +7,7 @@ import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import Video from "../../components/video"
-import * as ProjectPageStyles from "../../components/project.module.css"
+import * as ProjectPageStyles from "../../css/project.module.css"
 import "../../css/slick.css"
 
 function SampleNextArrow(props) {

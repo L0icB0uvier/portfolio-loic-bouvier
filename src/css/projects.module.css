@@ -10,13 +10,14 @@
 
 .containerWrapper {
   background-color: var(--color-code-bg-secondary);
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 
 .mainContainer {
   margin: 0 auto;
   max-width: var(--size-content);
   padding: var(--size-gutter);
+  position: relative;
 }
 
 .projectsWrapper {
@@ -55,12 +56,25 @@
   color: black;
 }
 
-.text{
+.text {
   margin-bottom: 50px;
 }
 
 .link {
   text-decoration: none;
+}
+
+.handleTop {
+  position: absolute;
+  top: -24px;
+  left: calc((100% / 2) - 100px);
+  fill: var(--color-code-bg-secondary);
+}
+.handleBottom {
+  position: absolute;
+  bottom: -44px;
+  left: calc((100% / 2) - 100px);
+  fill: var(--color-code-bg-secondary);
 }
 
 @media screen and (--large-screen) {
@@ -73,11 +87,6 @@
     position: relative;
     z-index: -1;
   }
-  
-
-  .mainContainer {
-    position: relative;
-  }
 
   .projectsWrapper {
     display: grid;
@@ -85,5 +94,18 @@
     gap: 5%;
     align-content: center;
     justify-content: center;
+  }
+
+  .handleTop {
+    position: absolute;
+    top: -32px;
+    left: calc((100% / 2) - 100px);
+    fill: var(--color-code-bg-secondary);
+  }
+  .handleBottom {
+    position: absolute;
+    bottom: -52px;
+    left: calc((100% / 2) - 100px);
+    fill: var(--color-code-bg-secondary);
   }
 }

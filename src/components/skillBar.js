@@ -1,5 +1,5 @@
 import React from "react"
-import * as SkillBarStyles from "./skillBar.module.css"
+import * as SkillBarStyles from "../css/skillBar.module.css"
 
 function SetFillBar(fillPercent) {
   switch (fillPercent) {

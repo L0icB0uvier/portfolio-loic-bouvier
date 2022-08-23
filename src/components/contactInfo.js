@@ -1,5 +1,5 @@
 import React from "react"
-import * as ContactInfoStyles from "./contactInfo.module.css"
+import * as ContactInfoStyles from "../css/contactInfo.module.css"
 
 const ContactInfo = ({ title, value }) => {
   return (

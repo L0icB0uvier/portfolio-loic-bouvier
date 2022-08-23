@@ -31,13 +31,29 @@
   color: var(--text-color-band);
 }
 
+.infoWrapper {
+  display: flex;
+  flex-direction: row;
+}
+
 .infoContainer {
   display: flex;
   flex-direction: column;
+  gap: 10px;
+}
+
+.linkContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contactLogo {
+  fill: var(--text-color-band);
 }
 
 @media screen and (--large-screen) {
-  .infoContainer {
+  .infoWrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }

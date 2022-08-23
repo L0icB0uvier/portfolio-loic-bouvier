@@ -1,0 +1,44 @@
+.wrapper {
+  background-color: var(--color-code-bg-secondary);
+}
+
+.mainContainer {
+  margin: 0 auto;
+  max-width: var(--size-content);
+  padding: var(--size-gutter);
+  position: relative;
+}
+
+.title {
+  text-align: left;
+}
+
+.handleTop {
+  position: absolute;
+  top: -10px;
+  left: calc((100% / 2) - 100px);
+  fill: var(--color-code-bg-primary);
+}
+
+.handleBottom {
+  position: absolute;
+  bottom: -10px;
+  left: calc((100% / 2) - 100px);
+  fill: var(--color-code-bg-primary);
+}
+
+@media screen and (--large-screen) {
+  .handleTop {
+    position: absolute;
+    top: 0px;
+    left: calc((100% / 2) - 100px);
+    fill: var(--color-code-bg-primary);
+  }
+  
+  .handleBottom {
+    position: absolute;
+    bottom: 0px;
+    left: calc((100% / 2) - 100px);
+    fill: var(--color-code-bg-primary);
+  }
+}

@@ -1,8 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
-import * as HeaderStyles from "./header.module.css"
 import { StaticImage } from "gatsby-plugin-image"
+import * as HeaderStyles from "../css/header.module.css"
 
 class Header extends React.Component {
   constructor(props) {

@@ -1,5 +1,5 @@
 import React from "react"
-import * as AboutStyles from "./about.module.css"
+import * as AboutStyles from "../css/about.module.css"
 import SectionTitle from "./sectionTitle"
 
 const About = () => {

@@ -51,6 +51,16 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Raleway\:300, 400, 700, 900`, // you can also specify font weights and styles
+        ],
+        display: "swap",
+      },
+    },
     {
       resolve: `gatsby-plugin-postcss`,
       options: {

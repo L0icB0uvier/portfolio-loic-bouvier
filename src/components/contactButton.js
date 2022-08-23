@@ -1,10 +1,7 @@
 import React from "react"
-import { GatsbyImage } from "gatsby-plugin-image"
-import * as ContactButtonStyles from "./contactButton.module.css"
+import * as ContactButtonStyles from "../css/contactButton.module.css"
 
-const ContactButton = ({ url, img, image_alt, name }) => {
-
-  
+const ContactButton = ({ url, img, image_alt, name, svg }) => {
   return (
     <a
       href={url}
@@ -13,7 +10,7 @@ const ContactButton = ({ url, img, image_alt, name }) => {
       target="_blank"
       rel="noreferrer"
     >
-      <GatsbyImage image={img} alt={image_alt} />
+      {svg}
       <p className={ContactButtonStyles.contactText}>{name}</p>
     </a>
   )
