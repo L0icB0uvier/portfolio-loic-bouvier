@@ -1,4 +1,3 @@
-import { Link } from "gatsby"
 import React from "react"
 import * as AboutStyles from "../css/about.module.css"
 import SectionTitle from "./sectionTitle"

@@ -1,7 +1,6 @@
 import React from "react"
 import SkillBar from "./skillBar"
 import * as CompetenceStyles from "../css/competences.module.css"
-import SectionTitle from "./sectionTitle"
 import ResumeSectionTitle from "./resumeSectionTitle"
 import SkillTitle from "./skillTitle"
 
@@ -9,7 +8,6 @@ const Competences = () => {
   return (
     <div className={CompetenceStyles.wrapper}>
       <div className={CompetenceStyles.mainContainer}>
-        {/* <SectionTitle title="03 - CV" /> */}
         <ResumeSectionTitle title="Compétences" />
         <p>
           Mon expérience en tant que dévelopeur indépendant m'a apporté un grand

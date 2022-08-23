@@ -9,18 +9,18 @@
 
   --color-code-bg-primary: #ffffff;
   --color-code-bg-secondary: #f5f3f4;
-  --color-band: #2ec4b6;
-  
+  --color-band: #ff3f00;
+
   --color-header: #161a1d;
   --text-color: #000000;
   --text-color-header: #ffffff;
   --text-color-band: white;
-  --text-color-band-hover: #ffbf69;
+  --text-color-band-hover: #000000;
   --text-section-title: #000000;
 
   --color-code: #8a6534;
-  --font-sans: Raleway, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
-    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  --font-sans: Raleway, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   --font-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
     "Courier New", monospace;
   --font-lg: 18px;
@@ -164,7 +164,9 @@ pre {
   padding: var(--space-4);
 }
 b,
-strong,
+strong {
+  font-weight: 900;
+}
 dt,
 th {
   font-weight: bold;

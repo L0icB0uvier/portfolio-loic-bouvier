@@ -37,16 +37,26 @@
   padding: 0;
   width: 512;
   height: 400;
-  background-color: rgba(128, 128, 128, 0.356);
+  background-color: var(--color-code-bg-primary);
 
-  border-radius: 10px;
+  border-radius: 5px;
   overflow: hidden;
+  transition: all 0.25s;
+}
+
+.project:hover {
+  background-color: var(--color-band);
+  transform: scale(1.02);
+  /* transform: translate(0, -10px); */
 }
 
 .projectContainer {
   display: flex;
   align-items: flex-start;
   justify-items: center;
+}
+
+.projectInfo {
 }
 
 .projectTitle {

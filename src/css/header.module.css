@@ -12,50 +12,29 @@
 .mainContainer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 32px;
+  height: 64px;
 }
 
 .anchorContainer {
   display: flex;
   flex-direction: column;
   gap: 0px;
-  margin: 0;
-}
-
-.homeButton {
-  text-decoration: none;
-  padding-left: 15px;
-}
-
-.homeText {
-  color: var(--text-color-header);
-  margin: 5px 0px 10px 0px;
-}
-
-.sectionLinkText{
-  color: rgba(208, 214, 219, 0.87);
-  margin: 0;
-  text-transform: uppercase;
-}
-
-.sectionLink:hover .sectionLinkText{
-  color: white;
-}
-
-.active .sectionLinkText{
-  color: white;
-  text-decoration: underline;
-  text-decoration-color: white;
+  margin: 0 32px;
 }
 
 .sectionLink {
   color: var(--text-color-header);
   text-decoration: none;
   margin: 0;
-  padding-left: 16px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
 }
 
 .sectionLink:hover {
-  color: darkred;
+  color: var(--color-band);
 }
 
 .menuButton {
@@ -65,11 +44,20 @@
 }
 
 .active {
+  color: var(--text-color-header);
   text-decoration: underline;
-  text-decoration-color: red;
+}
+
+.sectionLink:hover .active {
+  color: var(--color-band);
+  text-decoration: underline;
 }
 
 @media screen and (--large-screen) {
+  .wrapper {
+    height: 64px;
+  }
+
   .anchorContainer {
     display: flex;
     flex-direction: row;

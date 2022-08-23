@@ -64,12 +64,14 @@ const Portfolio = () => {
                         }
                         alt={node.frontmatter.image_alt}
                       />
-                      <h2 className={PortfolioStyles.projectTitle}>
-                        {node.frontmatter.name}
-                      </h2>
-                      <p className={PortfolioStyles.projectDescription}>
-                        {node.frontmatter.shortDescription}
-                      </p>
+                      <div className={PortfolioStyles.projectInfo}>
+                        <h2 className={PortfolioStyles.projectTitle}>
+                          {node.frontmatter.name}
+                        </h2>
+                        <p className={PortfolioStyles.projectDescription}>
+                          {node.frontmatter.shortDescription}
+                        </p>
+                      </div>
                     </div>
                   </Link>
                 </article>

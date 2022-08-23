@@ -13,10 +13,11 @@ import "../../css/slick.css"
 function SampleNextArrow(props) {
   const { className, style, onClick } = props
   return (
-    <div
+    <button
       className={className}
       style={{ ...style, display: "block", right: "20px" }}
       onClick={onClick}
+      aria-label="NextArrow"
     />
   )
 }
@@ -24,10 +25,11 @@ function SampleNextArrow(props) {
 function SamplePrevArrow(props) {
   const { className, style, onClick } = props
   return (
-    <div
+    <button
       className={className}
       style={{ ...style, display: "block", left: "20px", zIndex: "20" }}
       onClick={onClick}
+      aria-label="PrevArrow"
     />
   )
 }
@@ -86,7 +88,7 @@ export const query = graphql`
           image_alt
           image {
             childImageSharp {
-              gatsbyImageData(width: 1500)
+              gatsbyImageData(width: 1300)
             }
           }
         }

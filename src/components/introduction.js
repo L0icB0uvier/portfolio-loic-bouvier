@@ -7,9 +7,9 @@ const Presentation = () => {
     <section id="prensentation" className={IntroductionStyles.wrapper}>
       <div className={IntroductionStyles.mainContainer}>
         <h1 className={IntroductionStyles.title}>Bienvenue!</h1>
-        <h1 className={IntroductionStyles.title}>Moi c'est Loïc</h1>
+        <h1 className={IntroductionStyles.title}>Je m'appelle <strong>Loïc Bouvier</strong> </h1>
         <h3 className={IntroductionStyles.description}>
-          Je suis dévelopeur de jeu sur Unity et je me passionne pour tous les
+          Je suis dévelopeur de jeu sur <strong>Unity</strong> et je me passionne pour tous les
           aspects du développement de jeu, du Game Design à la programmation!
         </h3>
         <Link to="/#contact" className={IntroductionStyles.contactButton}>

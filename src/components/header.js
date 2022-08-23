@@ -1,9 +1,9 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import * as HeaderStyles from "../css/header.module.css"
 import Scrollspy from "react-scrollspy"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 class Header extends React.Component {
   constructor(props) {
@@ -47,45 +47,30 @@ class Header extends React.Component {
       menuButtons = (
         <Scrollspy
           className={HeaderStyles.anchorContainer}
-          offset={isMobile ? -200 : -60}
+          offset={isMobile ? -200 : -64}
           items={["about", "portfolio", "resume", "contact"]}
           currentClassName={HeaderStyles.active}
         >
-          <Link
+          <AnchorLink
             to="/#about"
             className={HeaderStyles.sectionLink}
-            activeClassName={HeaderStyles.active}
-            partiallyActive={true}
-          >
-            <h2 className={HeaderStyles.sectionLinkText}>A propos</h2>
-          </Link>
-
-          <Link
+            title="A Propos"
+          />
+          <AnchorLink
             to="/#portfolio"
             className={HeaderStyles.sectionLink}
-            activeClassName={HeaderStyles.active}
-            partiallyActive={true}
-          >
-            <h2 className={HeaderStyles.sectionLinkText}>Portfolio</h2>
-          </Link>
-
-          <Link
+            title="Portfolio"
+          />
+          <AnchorLink
             to="/#resume"
             className={HeaderStyles.sectionLink}
-            activeClassName={HeaderStyles.active}
-            partiallyActive={true}
-          >
-            <h2 className={HeaderStyles.sectionLinkText}>CV</h2>
-          </Link>
-
-          <Link
+            title="CV"
+          />
+          <AnchorLink
             to="/#contact"
             className={HeaderStyles.sectionLink}
-            activeClassName={HeaderStyles.active}
-            partiallyActive={true}
-          >
-            <h2 className={HeaderStyles.sectionLinkText}>Contact</h2>
-          </Link>
+            title="Contact"
+          />
         </Scrollspy>
       )
     }
@@ -94,9 +79,11 @@ class Header extends React.Component {
     if (!isMobile) {
       layout = (
         <div className={HeaderStyles.mainContainer}>
-          <Link to="/" className={HeaderStyles.homeButton}>
-            <h2 className={HeaderStyles.homeText}>Loïc Bouvier</h2>
-          </Link>
+          <AnchorLink
+            to="/"
+            className={HeaderStyles.sectionLink}
+            title="Loïc Bouvier"
+          />
           {menuButtons}
         </div>
       )
@@ -116,9 +103,11 @@ class Header extends React.Component {
       layout = (
         <div>
           <div className={HeaderStyles.mainContainer}>
-            <Link to="/" className={HeaderStyles.homeButton}>
-              <h2 className={HeaderStyles.homeText}>Loïc Bouvier</h2>
-            </Link>
+            <AnchorLink
+              to="/"
+              className={HeaderStyles.sectionLink}
+              title="Loïc Bouvier"
+            />
             <button
               onClick={this.handleToggleClick}
               className={HeaderStyles.menuButton}

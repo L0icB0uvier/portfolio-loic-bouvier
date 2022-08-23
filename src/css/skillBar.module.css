@@ -1,9 +1,9 @@
 .barContainer {
-  border: solid 2px rgb(138, 5, 5);
+  border: solid 2px var(--color-band);
 }
 
 .barFill {
-  background-color: rgb(138, 5, 5);
+  background-color: var(--color-band);
 }
 
 .barFill_master {
