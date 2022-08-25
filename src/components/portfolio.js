@@ -41,44 +41,36 @@ const Portfolio = () => {
         <SectionTitle title="02 - Portfolio" />
 
         <div className={PortfolioStyles.mainContainer}>
-          <div>
-            <h2>Mes projets</h2>
-            <p className={PortfolioStyles.text}>
-              Voici les projets sur lesquels j'ai travaillé ces dernières années
-              et qui m'ont permis d'apprendre le dévelopement de jeux sur Unity.
-            </p>
-            <div className={PortfolioStyles.projectsWrapper}>
-              {data.allMdx.nodes.map(node => (
-                <article
-                  className={PortfolioStyles.project}
-                  key={node.frontmatter.name}
+          <div className={PortfolioStyles.projectsWrapper}>
+            {data.allMdx.nodes.map(node => (
+              <article
+                className={PortfolioStyles.project}
+                key={node.frontmatter.name}
+              >
+                <Link
+                  className={PortfolioStyles.link}
+                  to={`/projects/${node.slug}`}
                 >
-                  <Link
-                    className={PortfolioStyles.link}
-                    to={`/projects/${node.slug}`}
-                  >
-                    <div>
-                      <GatsbyImage
-                        image={
-                          node.frontmatter.image.childImageSharp.gatsbyImageData
-                        }
-                        alt={node.frontmatter.image_alt}
-                      />
-                      <div className={PortfolioStyles.projectInfo}>
-                        <h2 className={PortfolioStyles.projectTitle}>
-                          {node.frontmatter.name}
-                        </h2>
-                        <p className={PortfolioStyles.projectDescription}>
-                          {node.frontmatter.shortDescription}
-                        </p>
-                      </div>
+                  <div>
+                    <GatsbyImage
+                      image={
+                        node.frontmatter.image.childImageSharp.gatsbyImageData
+                      }
+                      alt={node.frontmatter.image_alt}
+                    />
+                    <div className={PortfolioStyles.projectInfo}>
+                      <h2 className={PortfolioStyles.projectTitle}>
+                        {node.frontmatter.name}
+                      </h2>
+                      <p className={PortfolioStyles.projectDescription}>
+                        {node.frontmatter.shortDescription}
+                      </p>
                     </div>
-                  </Link>
-                </article>
-              ))}
-            </div>
+                  </div>
+                </Link>
+              </article>
+            ))}
           </div>
-          <p></p>
         </div>
 
         <svg

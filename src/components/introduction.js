@@ -7,10 +7,14 @@ const Presentation = () => {
     <section id="prensentation" className={IntroductionStyles.wrapper}>
       <div className={IntroductionStyles.mainContainer}>
         <h1 className={IntroductionStyles.title}>Bienvenue!</h1>
-        <h1 className={IntroductionStyles.title}>Je m'appelle <strong>Loïc Bouvier</strong> </h1>
+        <h2 className={IntroductionStyles.title}>
+          Je m'appelle <strong>Loïc Bouvier</strong>
+        </h2>
         <h3 className={IntroductionStyles.description}>
-          Je suis dévelopeur de jeu sur <strong>Unity</strong> et je me passionne pour tous les
-          aspects du développement de jeu, du Game Design à la programmation!
+          Je suis dévelopeur de jeux et je possède une vision d'ensemble
+          concernant le développement d'un jeu vidéo. J'aime par dessus tout
+          résoudre des problèmes, ce qui d'acquérir de solides compétences en tant que{" "}
+          <strong>Programmeur</strong> et <strong>Game Designer</strong>.
         </h3>
         <Link to="/#contact" className={IntroductionStyles.contactButton}>
           <h2 className={IntroductionStyles.contactButtonText}>Contact me!</h2>

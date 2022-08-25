@@ -1,6 +1,7 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import TopNavLink from "./topNavLink"
 
 import Header from "./header"
 import "../css/layout.css"
@@ -21,6 +22,7 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div>
         <main>{children}</main>
+        <TopNavLink showBelow={250} />
         <footer
           style={{
             marginTop: `10px`,

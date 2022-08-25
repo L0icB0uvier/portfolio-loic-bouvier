@@ -10,10 +10,10 @@ const Competences = () => {
       <div className={CompetenceStyles.mainContainer}>
         <ResumeSectionTitle title="Compétences" />
         <p>
-          Mon expérience en tant que dévelopeur indépendant m'a apporté un grand
-          nombre de compétences mais m'a surtout appris à apprendre. Mon périple
-          de dévelopeur sur Unity a été semé d'embuche, mais j'ai toujours su
-          surmonter les challenges grâce à ma rigueur et ma curiosité naturelle.{" "}
+          Le développement de Synchron et mes différents projets ainsi que ma
+          curiosité naturelle et ma volonté de me perfectionner m’a poussé à
+          explorer en profondeur de nombreux sujets liés au développement de
+          jeux.
         </p>
         <SkillTitle title="Game Engine" />
         <div className={CompetenceStyles.skillsContainer}>

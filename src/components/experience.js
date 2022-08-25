@@ -17,24 +17,18 @@ const Experience = () => {
         </svg>
         <ResumeSectionTitle title="Expérience" />
         <p>
-          Passioné de jeux vidéo depuis mon plus jeune age, c'est tardivement
-          que je me suis intéressé au développement de jeux. Je suis ainsi parti
-          de zéro et j'ai appris par moi même à l'aide de cours en lignes, de
-          livres et de tutoriel sur Youtube.
+          Après une courte expérience sur <strong>Unreal Engine</strong>, je
+          suis passé sur <strong>Unity</strong> et, avec l’aide d’un artiste,
+          j'ai passé les 5 dernières années à développer un jeu de
+          Puzzle/Aventure en 2D trimétrique appelé <strong>Synchron</strong>.
         </p>
         <p>
-          J'ai commencé mon parcour de game developeur sur Unreal Engine en
-          travaillant sur un projet 3D avec un artiste. Après avoir passé près
-          d'un an à découvrir les différentes facettes du développement de jeux,
-          nous avons décidé de changer de moteur et de nous lancer dans un
-          projet avec un scope plus raisonable. C'est ainsi que j'ai attéri sur
-          Unity.
+          C’est à travers ce projet que je suis parvenu à maitriser le moteur de
+          jeu Unity, que j’ai acquis mes nombreuses compétences, que j’ai mis à
+          exécution mes connaissances en gestion de projet et surtout que j’ai
+          appris à apprendre.
         </p>
-        <p>
-          J'ai passé les 5 dernières années à développer un Puzzle/Aventure game
-          en 2D trimetric appelé Synchron. Ce projet m'a permis de compléter ma
-          formation en explorant tous les aspets du développement sous Unity.{" "}
-        </p>
+
         <svg
           className={ExperienceStyles.handleBottom}
           width={200}

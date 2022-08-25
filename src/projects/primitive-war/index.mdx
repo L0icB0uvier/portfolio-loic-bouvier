@@ -2,7 +2,8 @@
 order: "1"
 name: "Primitive War"
 shortDescription: "Fight Simulator"
-longDescription: "Primitive War est un simulateur de combat réalisé dans le cadre d'un test technique. Le jeu a été crée sous Unity en 5 jours."
+longDescription: "Primitive War est un simulateur de combat réalisé dans le cadre d'un test technique. 
+Le jeu a été créé sous Unity en 5 jours. Le but du projet était de démontrer ma capacité à produire un code qui soit maintenable."
 image: "./game-logo.webp"
 image_alt: "Primitive war Logo"
 
@@ -28,7 +29,7 @@ Chaque armée est composée d'unités qui possèdent quatre caractéristiques:
 
 - HP: Le nombre de points de vie de l'unité
 - SPD: La vitesse de déplacement de l'unité
-- ATK: Les dégats infligés par l'unité à chaque attaque
+- ATK: Les dégâts infligés par l'unité à chaque attaque
 - ATKSPD: La vitesse d'attaque (plus la valeur est haute et plus l'unité attaque lentement)
 
 Ces caractéristiques sont déterminées pas la **forme**, la **couleur** et la **taille** de chaque unités.
@@ -41,15 +42,15 @@ Il est possible d'ajouter autant d'armées que souhaité et celles-ci s'affronte
 
 ## Architecture du jeu
 
-L'architecture du code suit l'architecture présenté par Ryan Hipple durant la conférence à l'Unite Austin 2017 - Game Artchitecture with Scriptable Objects. Cette dernière repose principalement sur les Scriptable objects, autant pour la gestion des données que pour la communication entre les scripts.
-Je fais également un usage intensif des UnityEvents afin de découpler au maximum les différents composants et permettre d'assure le principe de résponsabilité unique (S.O.L.I.D principles).
+L'architecture du code suit celle présenté par Ryan Hipple durant la conférence à [Unite Austin 2017 - Game Artchitecture with Scriptable Objects](https://www.youtube.com/watch?v=raQ3iHhE_Kk). Cette dernière repose principalement sur les Scriptable objects, autant pour la gestion des données que pour la communication entre les scripts.
+Je fais également un usage intensif des UnityEvents afin de découpler au maximum les différents composants et permettre d'assure le principe de responsabilité unique (S.O.L.I.D principles).
 
 Ce projet n'utilise aucun Singleton et aucun script n'utilise "DontDestroyOnLoad". J'essayer autant que possible de me passer de ces deux outils, vu leur tendance à causer des problèmes dès que le projet grandi.
 
-L'architecture actuelle permet d'ajouter facilement des nouvelles mécaniques tel que de nouvelles caractéristiques, formes, couleurs et taille.
+L'architecture actuelle permet d'ajouter facilement des nouvelles mécaniques telles que de nouvelles caractéristiques, formes, couleurs et taille.
 
 ## Mon rôle sur le projet
 
-J'ai réalisé ce projet seul de A à Z. Le plus gros du travail a été sur la partie programmation. 
-J'ai également travaillé brièvement sur Blender afin de modifier les UV des sphères. 
-Finalement j'ai crée des textures pour les matériaux et l'interface utilisateur du jeu.
+J'ai réalisé ce projet seul de A à Z. Le plus gros du travail a été sur la partie programmation.
+J'ai également travaillé brièvement sur Blender afin de modifier les UV des sphères.
+Finalement j'ai créé des textures pour les matériaux et l'interface utilisateur du jeu.

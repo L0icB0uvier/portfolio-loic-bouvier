@@ -27,6 +27,7 @@
 
 .projectsWrapper {
   display: flex;
+  margin: 32px 0;
   flex-direction: column;
   gap: 20px;
   align-content: center;
