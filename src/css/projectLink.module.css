@@ -1,0 +1,23 @@
+.projectLink {
+  margin: 10px 0px;
+  transition: all 0.5s;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-items: center;
+}
+
+.projectLink:hover {
+  transform: translateX(-10px);
+}
+
+.projectLinkText {
+  visibility: collapse;
+  margin: 0;
+  margin-right: 10px;
+}
+
+.projectLink:hover .projectLinkText {
+  visibility: visible;
+}
+

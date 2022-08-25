@@ -1,7 +1,11 @@
+.wrapper {
+}
+
 .mainContainer {
   margin: 0 auto;
   max-width: var(--size-content);
   padding: 10px 20px;
+  position: relative;
 }
 
 .projectTitle {
@@ -10,8 +14,54 @@
   text-align: center;
 }
 
-.slider{
+.slider {
   margin-bottom: 20px;
 }
 
+.linkContainer {
+  width: calc((100% - var(--size-content)) / 2);
+  position: fixed;
+  bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 32px;
+}
 
+.link {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.svgLine {
+  margin-right: 16px;
+}
+
+.portfolioLinkWrapper {
+  width: calc((100% - var(--size-content)) / 2);
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  margin: 32px -16px;
+}
+
+.portfolioLinkContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+  border: solid 1px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  transition: all 0.5s;
+}
+
+.portfolioLinkContainer:hover {
+  transform: translateX(-20px) scale(1.1);
+  gap: 20px;
+}
+
+.portfolioLink {
+  color: black;
+}
