@@ -20,7 +20,7 @@
 }
 
 .linkContainer {
-  visibility: collapse;
+  display: none;
 }
 
 .link {
@@ -70,7 +70,6 @@
   }
 
   .linkContainer {
-    visibility: visible;
     width: calc((100% - var(--size-content)) / 2);
     position: fixed;
     bottom: 0px;
