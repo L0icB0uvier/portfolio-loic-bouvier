@@ -23,6 +23,15 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `loicBouvier-Portfolio`,
+        short_name: `Portfolio`,
+        start_url: `/`,
+        icon: `src/images/favicon.png`,
+      },
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
