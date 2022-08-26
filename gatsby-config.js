@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Loïc Bouvier Portfolio`,
+    title: `Portfolio`,
     description: `This is the portfolio of Loïc Bouvier, a Unity Game Developer with 5 years of experience on create in games.`,
     author: `Loïc Bouvier`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    siteUrl: `https://loicbouvier-gamedev.com/`,
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -23,15 +23,6 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `loicBouvier-Portfolio`,
-        short_name: `Portfolio`,
-        start_url: `/`,
-        icon: `src/images/favicon.png`,
-      },
-    },
-    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
@@ -49,15 +40,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Portfolio Loïc Bouvier`,
+        short_name: `Portfolio`,
         start_url: `/`,
         background_color: `#663399`,
-        // This will impact how browsers show your PWA/website
-        // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon.png`,
       },
     },
 

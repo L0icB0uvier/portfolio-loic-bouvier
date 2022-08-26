@@ -12,6 +12,7 @@ import "../../css/slick.css"
 import ProjectLink from "../../components/projectLink"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 import ArrowBackIosSharp from "@material-ui/icons/ArrowBackIosSharp"
+import Seo from "../../components/seo"
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props
@@ -52,6 +53,7 @@ const ProjectPage = ({ data }) => {
 
   return (
     <Layout pageTitle="Project Page">
+      <Seo title={data.mdx.frontmatter.name}/>
       <div className={ProjectPageStyles.wrapper}>
         <div className={ProjectPageStyles.portfolioLinkWrapper}>
           <div className={ProjectPageStyles.portfolioLinkContainer}>
