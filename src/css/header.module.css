@@ -34,7 +34,7 @@
 }
 
 .sectionLink:hover {
-  color: var(--color-band);
+  color: var(--text-color-header-hover);
 }
 
 .menuButton {

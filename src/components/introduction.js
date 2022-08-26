@@ -13,7 +13,7 @@ const Presentation = () => {
         </h2>
         <p className={IntroductionStyles.description}>
           J'ai passé les 5 dernières années à créer un jeu vidéo indépendant
-          nommé <strong>Synchron</strong> en collaboration avec Baptiste Janin.
+          nommé <strong>Synchron</strong> en collaboration avec <strong>Baptiste Janin</strong>.
         </p>
         <Link to="/#contact" className={IntroductionStyles.contactButton}>
           <h2 className={IntroductionStyles.contactButtonText}>Contact me!</h2>

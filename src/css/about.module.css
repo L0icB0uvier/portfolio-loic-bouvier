@@ -26,7 +26,7 @@
 }
 
 .downloadResumeButton:hover {
-  background-color: #ff000d;
+  background-color: var(--color-header);
   transform: scale(1.1);
 }
 
