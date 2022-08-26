@@ -17,7 +17,7 @@ const Contact = () => {
             <ul className={ContactStyles.infoContainer}>
               <ContactInfo title="Age" value="31 ans" />
               <ContactInfo title="Tél" value="+33 7.49.90.59.45" />
-              <ContactInfo title="Lieu" value="Région parisienne, France" />
+              <ContactInfo title="Lieu" value="Région parisienne" />
             </ul>
             <ul className={ContactStyles.linkContainer}>
               <ContactButton
