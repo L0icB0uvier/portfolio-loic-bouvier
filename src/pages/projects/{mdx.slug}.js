@@ -66,7 +66,7 @@ const ProjectPage = ({ data }) => {
         <div className={ProjectPageStyles.linkContainer}>
           <div className={ProjectPageStyles.link}>
             {data.mdx.frontmatter.links.map(node => (
-              <div className={ProjectPageStyles.link}>
+              <div className={ProjectPageStyles.link} key={node.linkActionName}>
                 <svg
                   width="2"
                   height="20"

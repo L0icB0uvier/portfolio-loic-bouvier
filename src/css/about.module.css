@@ -22,19 +22,10 @@
 }
 
 .downloadResumeButton {
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: fit-content;
-  background-color: var(--color-band);
-  height: 64px;
-  text-decoration: none;
-  border-radius: 10px;
-  transition: all .5s;
+  display: none;
 }
 
-.downloadResumeButton:hover{
+.downloadResumeButton:hover {
   background-color: #ff000d;
   transform: scale(1.1);
 }
@@ -61,5 +52,19 @@
 
   .containerWrapper {
     padding: var(--size-gutter) 0;
+  }
+
+  .downloadResumeButton {
+    visibility: visible;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    background-color: var(--color-band);
+    height: 64px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: all 0.5s;
   }
 }

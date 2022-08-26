@@ -22,7 +22,7 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div>
         <main>{children}</main>
-        <TopNavLink showBelow={250} />
+        <TopNavLink showBelow={100} />
         <footer
           style={{
             marginTop: `10px`,

@@ -9,9 +9,10 @@
 }
 
 .projectTitle {
-  margin-top: 50px;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
   font-size: 4rem;
-  text-align: center;
+  text-align: left;
 }
 
 .slider {
@@ -19,13 +20,7 @@
 }
 
 .linkContainer {
-  width: calc((100% - var(--size-content)) / 2);
-  position: fixed;
-  bottom: 0px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  padding-right: 32px;
+  visibility: collapse;
 }
 
 .link {
@@ -39,11 +34,12 @@
 }
 
 .portfolioLinkWrapper {
-  width: calc((100% - var(--size-content)) / 2);
-  position: fixed;
+  width: 100%;
+  position: static;
   display: flex;
-  justify-content: flex-end;
-  margin: 32px -16px;
+  justify-content: flex-start;
+  margin-top: 16px;
+  margin-left: 32px;
 }
 
 .portfolioLinkContainer {
@@ -64,4 +60,61 @@
 
 .portfolioLink {
   color: black;
+}
+
+@media screen and (--large-screen) {
+  .projectTitle {
+    margin-top: 50px;
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .linkContainer {
+    visibility: visible;
+    width: calc((100% - var(--size-content)) / 2);
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 32px;
+  }
+
+  .link {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .svgLine {
+    margin-right: 16px;
+  }
+
+  .portfolioLinkWrapper {
+    width: calc((100% - var(--size-content)) / 2);
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    margin: 32px -16px;
+  }
+
+  .portfolioLinkContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    border: solid 1px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: all 0.5s;
+  }
+
+  .portfolioLinkContainer:hover {
+    transform: translateX(-20px) scale(1.1);
+    gap: 20px;
+  }
+
+  .portfolioLink {
+    color: black;
+  }
 }
