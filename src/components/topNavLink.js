@@ -16,9 +16,9 @@ const useStyles = makeStyles(theme => ({
       backgroundColor: "#DCDCDC",
     },
     [theme.breakpoints.up("xs")]: {
-      right: "10%",
+      right: "5%",
       backgroundColor: "rgb(220,220,220,0.7)",
-      bottom: "10vh",
+      bottom: "4vh",
     },
     [theme.breakpoints.up("lg")]: {
       right: "2%",

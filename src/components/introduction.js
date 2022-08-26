@@ -6,16 +6,15 @@ const Presentation = () => {
   return (
     <section id="prensentation" className={IntroductionStyles.wrapper}>
       <div className={IntroductionStyles.mainContainer}>
-        <h1 className={IntroductionStyles.title}>Bienvenue!</h1>
-        <h2 className={IntroductionStyles.title}>
-          Je m'appelle <strong>Loïc Bouvier</strong>
+        <h1 className={IntroductionStyles.introductionText}>Bienvenu, je m'appelle</h1>
+        <h1 className={IntroductionStyles.title}>Loïc Bouvier</h1>
+        <h2 className={IntroductionStyles.subtitle}>
+          Je suis dévelopeur de jeux vidéo sur <strong>Unity</strong>
         </h2>
-        <h3 className={IntroductionStyles.description}>
-          Je suis dévelopeur de jeux et je possède une vision d'ensemble
-          concernant le développement d'un jeu vidéo. J'aime par dessus tout
-          résoudre des problèmes, ce qui d'acquérir de solides compétences en tant que{" "}
-          <strong>Programmeur</strong> et <strong>Game Designer</strong>.
-        </h3>
+        <p className={IntroductionStyles.description}>
+          J'ai passé les 5 dernières années à créer un jeu vidéo indépendant
+          nommé <strong>Synchron</strong> en collaboration avec Baptiste Janin.
+        </p>
         <Link to="/#contact" className={IntroductionStyles.contactButton}>
           <h2 className={IntroductionStyles.contactButtonText}>Contact me!</h2>
         </Link>

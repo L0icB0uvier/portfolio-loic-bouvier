@@ -1,3 +1,4 @@
+import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
 import * as AboutStyles from "../css/about.module.css"
 import SectionTitle from "./sectionTitle"
@@ -10,18 +11,32 @@ const About = () => {
         <div className={AboutStyles.mainContainer}>
           <div>
             <h2>Qui-suis je?</h2>
-            <p>
-              Étant passionné de jeux vidéo, j'ai décidé suite à mes étude de
-              suivre un rêve d’enfant et de développer un jeu vidéo.
-            </p>
-            <p>
-              J’aime par-dessus tout <strong>résoudre des problèmes</strong>, ce
-              qui m’a permis d’être instantanément stimulé par le{" "}
-              <strong>Game Design</strong> et la <strong>Programmation</strong>.
-              Aujourd’hui, rien ne m’intéresse plus que de travailler sur un
-              projet de jeu vidéo sur lequel j’ai une vision d’ensemble et qui
-              nécessite d’apprendre constamment de nouvelles compétences.
-            </p>
+
+            <div className={AboutStyles.flex}>
+              <StaticImage
+                src="../images/photo-loic-square.png"
+                alt="Photo"
+                layout="constrained"
+                formats={["webp"]}
+                aspectRatio={1 / 1}
+                className={AboutStyles.photo}
+              />
+              <div className={AboutStyles.text}>
+                <p>
+                  Étant passionné de jeux vidéo, j'ai décidé suite à mes étude
+                  de suivre un rêve d’enfant et de développer un jeu vidéo.
+                </p>
+                <p style={{marginBottom: 0}}>
+                  J’aime par-dessus tout <strong>résoudre des problèmes</strong>
+                  , ce qui m’a permis d’être instantanément stimulé par le{" "}
+                  <strong>Game Design</strong> et la{" "}
+                  <strong>Programmation</strong>. Aujourd’hui, rien ne
+                  m’intéresse plus que de travailler sur un projet de jeu vidéo
+                  sur lequel j’ai une vision d’ensemble et qui nécessite
+                  d’apprendre constamment de nouvelles compétences.
+                </p>
+              </div>
+            </div>
             <a
               href="/resume.pdf"
               target="_blank"

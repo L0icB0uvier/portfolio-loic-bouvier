@@ -11,17 +11,32 @@
   align-items: center;
 }
 
-.title {
-  font-size: 3rem;
-  text-align: center;
-  margin: 0;
-  text-transform: uppercase;
+.introductionText {
   color: var(--text-color-band);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  color: var(--text-color-band);
+  font-size: 3rem;
+  margin: 0;
+}
+
+.subtitle {
+  color: var(--text-color-band);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
 }
 
 .description {
-  text-align: center;
   color: var(--text-color-band);
+  font-weight: 400;
+  margin: 32px 0px;
+  width: 100%;
+  text-align: center;
 }
 
 .contactButton {
@@ -48,4 +63,43 @@
 
 .contactButton:hover .contactButtonText {
   color: var(--text-color-band-hover);
+}
+
+@media screen and (--large-screen) {
+  .mainContainer {
+    margin: 0 auto;
+    max-width: var(--size-content);
+    padding: calc(var(--size-gutter) * 2) var(--size-gutter);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .introductionText {
+    color: var(--text-color-band);
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .title {
+    color: var(--text-color-band);
+    font-size: 4.5rem;
+    margin: 0;
+  }
+
+  .subtitle {
+    color: var(--text-color-band);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
+  }
+
+  .description {
+    color: var(--text-color-band);
+    font-weight: 400;
+    margin: 32px 0px;
+    width: 70%;
+    text-align: center;
+  }
 }

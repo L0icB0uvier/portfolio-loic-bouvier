@@ -15,6 +15,7 @@ const Formation = () => {
             href="https://www.icd-ecoles.com/ecole-commerce-paris"
             target="_blank"
             rel="noreferrer"
+            className={FormationStyles.link}
           >
             {" "}
             ICD Paris
@@ -30,6 +31,7 @@ const Formation = () => {
             href="https://www.youtube.com/extracredits"
             target="_blank"
             rel="noreferrer"
+            className={FormationStyles.link}
           >
             Extra-Credits
           </a>{" "}
@@ -38,6 +40,7 @@ const Formation = () => {
             href="https://www.youtube.com/c/MarkBrownGMT"
             target="_blank"
             rel="noreferrer"
+            className={FormationStyles.link}
           >
             Game Maker’s Tool Kit
           </a>{" "}
@@ -46,6 +49,7 @@ const Formation = () => {
             href="https://www.youtube.com/c/GameNextDoor01"
             target="_blank"
             rel="noreferrer"
+            className={FormationStyles.link}
           >
             Game Next Door
           </a>
@@ -55,32 +59,36 @@ const Formation = () => {
             href="https://www.theoryoffun.com/"
             target="_blank"
             rel="noreferrer"
+            className={FormationStyles.link}
           >
-            <em>"A Theory Of Fun"</em>{" "}
+            "A Theory Of Fun"{" "}
           </a>
           ,{" "}
           <a
             href="https://www.theoryoffun.com/"
             target="_blank"
             rel="noreferrer"
+            className={FormationStyles.link}
           >
-            <em>"The Art of Game Design"</em>
+            "The Art of Game Design"
           </a>
           ,{" "}
           <a
             href="https://www.routledge.com/Architectural-Approach-to-Level-Design-Second-edition/Totten/p/book/9780815361367"
             target="_blank"
             rel="noreferrer"
+            className={FormationStyles.link}
           >
-            <em>"An Architectural Approach to Level Design"</em>{" "}
+            "An Architectural Approach to Level Design"{" "}
           </a>
           and{" "}
           <a
             href="https://www.goodreads.com/book/show/16269919-a-game-design-vocabulary"
             target="_blank"
             rel="noreferrer"
+            className={FormationStyles.link}
           >
-            <em>"A Game Design Vocabulary"</em>
+            "A Game Design Vocabulary"
           </a>
           .
         </p>
@@ -92,6 +100,7 @@ const Formation = () => {
             href="https://www.youtube.com/c/TheChernoProject"
             target="_blank"
             rel="noreferrer"
+            className={FormationStyles.link}
           >
             The Cherno
           </a>{" "}
@@ -100,6 +109,7 @@ const Formation = () => {
             href="https://www.youtube.com/user/IAmTimCorey"
             target="_blank"
             rel="noreferrer"
+            className={FormationStyles.link}
           >
             Tim Correy
           </a>
@@ -108,6 +118,7 @@ const Formation = () => {
             href="https://www.youtube.com/c/Unity3dCollege"
             target="_blank"
             rel="noreferrer"
+            className={FormationStyles.link}
           >
             Jason Weimann
           </a>{" "}
@@ -116,6 +127,7 @@ const Formation = () => {
             href="https://www.youtube.com/c/InfallibleCode"
             target="_blank"
             rel="noreferrer"
+            className={FormationStyles.link}
           >
             Infallible Code
           </a>{" "}
@@ -126,6 +138,7 @@ const Formation = () => {
             href="https://www.albahari.com/nutshell/"
             target="_blank"
             rel="noreferrer"
+            className={FormationStyles.link}
           >
             "C# in a nutshell"
           </a>
@@ -138,6 +151,7 @@ const Formation = () => {
             href="https://www.gameenginebook.com/"
             target="_blank"
             rel="noreferrer"
+            className={FormationStyles.link}
           >
             "Game Engine Architecture"
           </a>{" "}
@@ -147,6 +161,7 @@ const Formation = () => {
             href="https://www.essentialmath.com/book.htm"
             target="_blank"
             rel="noreferrer"
+            className={FormationStyles.link}
           >
             "Essential Mathematics for Games and Interactive Application"
           </a>{" "}

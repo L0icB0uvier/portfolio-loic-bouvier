@@ -10,8 +10,10 @@ const Contact = () => {
         <div className={ContactStyles.mainContainer}>
           <h1 className={ContactStyles.title}>Contact</h1>
           <p className={ContactStyles.text}>
-            Je recherche actuellement du travail, n'hésitez pas à me contacter
-            si mon profil correspond à ce que vous recherchez!
+            Je suis actuellement en recherche d'un poste qui saura mettre à profit mes compétences.
+          </p>
+          <p className={ContactStyles.text}>
+            N'hésitez pas à me contacter si mon profil vous intéresse et voudriez en savoir plus!
           </p>
           <div className={ContactStyles.infoWrapper}>
             <ul className={ContactStyles.infoContainer}>

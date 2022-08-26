@@ -19,7 +19,7 @@ class Header extends React.Component {
 
   handleResize() {
     this.setState({
-      isMobile: window.matchMedia("(max-width: 700px)").matches,
+      isMobile: window.matchMedia("(max-width: 1200px)").matches,
     })
   }
 

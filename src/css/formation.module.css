@@ -12,6 +12,14 @@
   text-align: left;
 }
 
+.link{
+  font-weight: 500;
+}
+
+.link:hover{
+  text-decoration: underline;
+}
+
 @media screen and (--large-screen) {
   .mainContainer {
     padding: var(--size-gutter) 0;
