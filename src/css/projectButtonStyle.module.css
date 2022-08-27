@@ -1,0 +1,59 @@
+.project {
+  padding: 0;
+  width: 512;
+  height: 400;
+  background-color: var(--color-code-bg-primary);
+
+  border-radius: 5px;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.project:hover {
+  background-color: var(--color-header);
+  transform: scale(1.02);
+  /* transform: translate(0, -10px); */
+}
+
+.link {
+  text-decoration: none;
+}
+
+.projectText {
+  padding: 10px;
+  position: relative;
+}
+
+.arrow {
+  display: none;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 0;
+  top: calc(100% / 4);
+  fill: var(--text-color-header);
+}
+
+.project:hover .arrow {
+  display: inline;
+}
+
+.projectTitle {
+  margin: auto;
+  text-align: center;
+  color: black;
+}
+
+.projectDescription {
+  margin: auto;
+  text-align: center;
+  color: black;
+}
+
+.project:hover .projectTitle {
+  color: var(--text-color-header);
+}
+
+.project:hover .projectDescription {
+  color: var(--text-color-header);
+}

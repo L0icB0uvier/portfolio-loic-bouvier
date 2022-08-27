@@ -1,8 +1,8 @@
 import React from "react"
-import { Link, useStaticQuery, graphql } from "gatsby"
-import { GatsbyImage } from "gatsby-plugin-image"
+import { useStaticQuery, graphql } from "gatsby"
 import SectionTitle from "./sectionTitle"
 import * as PortfolioStyles from "../css/portfolio.module.css"
+import ProjectButton from "./projectButton"
 
 const Portfolio = () => {
   const data = useStaticQuery(graphql`
@@ -43,32 +43,13 @@ const Portfolio = () => {
         <div className={PortfolioStyles.mainContainer}>
           <div className={PortfolioStyles.projectsWrapper}>
             {data.allMdx.nodes.map(node => (
-              <article
-                className={PortfolioStyles.project}
-                key={node.frontmatter.name}
-              >
-                <Link
-                  className={PortfolioStyles.link}
-                  to={`/projects/${node.slug}`}
-                >
-                  <div>
-                    <GatsbyImage
-                      image={
-                        node.frontmatter.image.childImageSharp.gatsbyImageData
-                      }
-                      alt={node.frontmatter.image_alt}
-                    />
-                    <div className={PortfolioStyles.projectInfo}>
-                      <h2 className={PortfolioStyles.projectTitle}>
-                        {node.frontmatter.name}
-                      </h2>
-                      <p className={PortfolioStyles.projectDescription}>
-                        {node.frontmatter.shortDescription}
-                      </p>
-                    </div>
-                  </div>
-                </Link>
-              </article>
+              <ProjectButton
+                path={`/projects/${node.slug}`}
+                image={node.frontmatter.image.childImageSharp.gatsbyImageData}
+                imageAlt={node.frontmatter.image_alt}
+                name={node.frontmatter.name}
+                description={node.frontmatter.shortDescription}
+              />
             ))}
           </div>
         </div>
