@@ -29,9 +29,9 @@ const Layout = ({ children }) => {
             fontSize: `var(--font-sm)`,
           }}
         >
-          <h3 style={{ textAlign: `center` }}>
+          <p style={{ textAlign: `center` }}>
             2022 L.BOUVIER - Tous droits réservés
-          </h3>
+          </p>
         </footer>
       </div>
     </>

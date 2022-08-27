@@ -42,6 +42,8 @@ module.exports = {
       options: {
         name: `Portfolio Loïc Bouvier`,
         short_name: `Portfolio`,
+        description: `Portfolio de Loïc Bouvier, développeur Unity.`,
+        lang: `fr`,
         start_url: `/`,
         background_color: `#663399`,
         display: `minimal-ui`,
@@ -53,8 +55,6 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `Raleway\:300, 400, 700, 900`,
-          `Roboto\:100,300,300i,400,500, 500i,700,900`,
           `Montserrat\:100,200,300,300i,500,700,900`,
         ],
         display: "swap",
