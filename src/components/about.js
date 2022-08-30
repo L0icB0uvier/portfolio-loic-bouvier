@@ -23,10 +23,10 @@ const About = () => {
               />
               <div className={AboutStyles.text}>
                 <p>
-                  Étant passionné de jeux vidéo, j'ai décidé suite à mes étude
-                  de suivre un rêve d’enfant et de développer un jeu vidéo.
+                  Passionné de jeux vidéo depuis mon plus jeune âge, je suis
+                  un développeur autodidacte avec 5 ans d'expérience sur <strong>Unity</strong>.
                 </p>
-                <p style={{marginBottom: 0}}>
+                <p style={{ marginBottom: 0 }}>
                   J’aime par-dessus tout <strong>résoudre des problèmes</strong>
                   , ce qui m’a permis d’être instantanément stimulé par le{" "}
                   <strong>Game Design</strong> et la{" "}
