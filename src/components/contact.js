@@ -20,7 +20,7 @@ const Contact = () => {
           <div className={ContactStyles.infoWrapper}>
             <ul className={ContactStyles.infoContainer}>
               <li className={ContactStyles.contactList}>
-                <ContactInfo title="Age" value="31 ans" />
+                <ContactInfo title="Age" value="32 ans" />
               </li>
               <li className={ContactStyles.contactList}>
                 {" "}
@@ -28,7 +28,7 @@ const Contact = () => {
               </li>
               <li className={ContactStyles.contactList}>
                 {" "}
-                <ContactInfo title="Lieu" value="Région parisienne" />
+                <ContactInfo title="Lieu" value="Auvergne-Rhône-Alpes" />
               </li>
             </ul>
             <ul className={ContactStyles.linkContainer}>

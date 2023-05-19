@@ -30,7 +30,7 @@ const Competences = () => {
         </div>
         <SkillTitle title="Informatique" />
         <div className={CompetenceStyles.skillsContainer}>
-          <SkillBar skillName="C#" skillProcifiency={80} />
+          <SkillBar skillName="C#" skillProcifiency={100} />
           <SkillBar skillName="C++" skillProcifiency={60} />
           <SkillBar skillName="Javascript" skillProcifiency={60} />
           <SkillBar skillName="HLSL" skillProcifiency={60} />
@@ -50,7 +50,7 @@ const Competences = () => {
         </div>
         <SkillTitle title="Gestion de projet" />
         <div className={CompetenceStyles.skillsContainer}>
-          <SkillBar skillName="Trello, Jira" skillProcifiency={80} />
+          <SkillBar skillName="Trello, Jira, Notion" skillProcifiency={80} />
           <SkillBar skillName="Méthode AGILE" skillProcifiency={80} />
           <SkillBar skillName="Mindmapping tools" skillProcifiency={100} />
           <SkillBar skillName="Diagram de Gant" skillProcifiency={100} />

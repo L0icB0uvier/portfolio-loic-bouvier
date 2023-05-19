@@ -34,7 +34,7 @@
 .description {
   color: var(--text-color-band);
   font-weight: 400;
-  margin: 32px 0px;
+  margin: 8px 0px;
   width: 100%;
   text-align: center;
 }
@@ -43,7 +43,7 @@
   border: solid 3px;
   border-color: var(--text-color-band);
   border-radius: 15px;
-  width: 200px;
+  width: 250px;
   text-decoration: none;
   margin-top: 20px;
   transition: all 0.5s;
@@ -98,7 +98,7 @@
   .description {
     color: var(--text-color-band);
     font-weight: 400;
-    margin: 32px 0px;
+    margin: 8px 0px;
     width: 80%;
     text-align: center;
   }

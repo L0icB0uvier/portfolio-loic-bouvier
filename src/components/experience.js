@@ -19,7 +19,7 @@ const Experience = () => {
         <p>
           Après une courte expérience sur <strong>Unreal Engine</strong>, je
           suis passé sur <strong>Unity</strong> et, avec l’aide d’un artiste,
-          j'ai passé les 5 dernières années à développer un jeu de
+          j'ai développé entre 2017 et 2022 un jeu de
           Puzzle/Aventure en 2D trimétrique appelé <strong>Synchron</strong>.
         </p>
         <p>
@@ -27,6 +27,10 @@ const Experience = () => {
           jeu Unity, que j’ai acquis mes nombreuses compétences, que j’ai mis à
           exécution mes connaissances en gestion de projet et surtout que j’ai
           appris à apprendre.
+        </p>
+        <p> 
+            Faute d'avoir pu trouver des fincancements pour terminer ce projet, j'ai rejoint un studio de jeux mobile crée par <strong>Voodoo</strong> appelé <strong>Ripe Groove Lab</strong> ayant pour ambition de développer des jeux utilisant la technologie <strong>blockchain</strong>. 
+            Après avoir travailler pendant 7 mois sur 3 jeux différents, le studio a fermé et je suis maintenant à la recherche de mon prochain emploi.  
         </p>
 
         <svg
