@@ -15,7 +15,7 @@ const Presentation = () => {
         <p className={IntroductionStyles.description}>Je cherche constamment à me perfectionner en tant que programmeur et à continuer d'explorer les possibilités du médium jeux vidéo. 
         C'est pourquoi je cherche à m'impliquer sur des projets de jeux intéressants autant sur le plan créatif que technique.</p>
         <Link to="/#contact" className={IntroductionStyles.contactButton}>
-          <h2 className={IntroductionStyles.contactButtonText}>Contactez moi !</h2>
+          <h2 className={IntroductionStyles.contactButtonText}>Contactez-moi !</h2>
         </Link>
 
         <p></p>

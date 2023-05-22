@@ -34,7 +34,7 @@ const Competences = () => {
           <SkillBar skillName="C++" skillProcifiency={60} />
           <SkillBar skillName="Javascript" skillProcifiency={60} />
           <SkillBar skillName="HLSL" skillProcifiency={60} />
-          <SkillBar skillName="Git" skillProcifiency={80} />
+          <SkillBar skillName="Git" skillProcifiency={100} />
           <SkillBar skillName="Python" skillProcifiency={40} />
           <SkillBar skillName="React" skillProcifiency={60} />
           <SkillBar skillName="CSS/HTML" skillProcifiency={80} />
