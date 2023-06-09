@@ -10,10 +10,9 @@ const Competences = () => {
       <div className={CompetenceStyles.mainContainer}>
         <ResumeSectionTitle title="Compétences" />
         <p>
-          Le développement de Synchron et mes différents projets ainsi que ma
-          curiosité naturelle et ma volonté de me perfectionner m’a poussé à
-          explorer en profondeur de nombreux sujets liés au développement de
-          jeux.
+          Mes expériences en tant que développeur indépendant et de Lead Game Programmeur chez 
+          Ripe Groove Labs m'ont permis d'acquérir de solides compétences dans de nombreux 
+          domaines liés au développement de jeux vidéo.
         </p>
         <SkillTitle title="Game Engine" />
         <div className={CompetenceStyles.skillsContainer}>
