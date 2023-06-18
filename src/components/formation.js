@@ -26,7 +26,7 @@ const Formation = () => {
         <p>
           J'ai tout d'abord suivi des cours en ligne sur <strong>Udemy</strong>{" "}
           pour apprendre les bases de la 3D et du C++. Pour l'apprentissage du
-          Game Design, des chaines YouTube tel que{" "}
+          Game Design, des chaines YouTube telles que{" "}
           <a
             href="https://www.youtube.com/extracredits"
             target="_blank"
@@ -53,8 +53,7 @@ const Formation = () => {
           >
             Game Next Door
           </a>
-          , m'ont apporté des bases que j'ai ensuite complété en lisant des
-          ouvrages tels que{" "}
+          , m'ont apporté des bases que j'ai ensuite complété en lisant les ouvrages{" "}
           <a
             href="https://www.theoryoffun.com/"
             target="_blank"
@@ -95,7 +94,7 @@ const Formation = () => {
         <p>
           J'ai appris la programmation principalement par la pratique. Cherchant
           constamment à m'améliorer, j'ai suivi des Youtubers spécialisés dans
-          la programmation tel que{" "}
+          la programmation tels que{" "}
           <a
             href="https://www.youtube.com/c/TheChernoProject"
             target="_blank"
@@ -131,8 +130,7 @@ const Formation = () => {
           >
             Infallible Code
           </a>{" "}
-          pour le C#. J'ai regardé toutes les conférences Unity sur les sujets
-          d'architecture de codes et de bonnes pratiques. Finalement, j'ai
+          pour le C#. Je suis constamment l'évolution des tech et des pratiques de l'industrie à travers les conférences Unity et GDC. Finalement, j'ai
           perfectionné ma compréhension du langage C# à l’aide de l’ouvrage
           <a
             href="https://www.albahari.com/nutshell/"

@@ -29,7 +29,7 @@ const Experience = () => {
           appris à apprendre.
         </p>
         <p> 
-            Faute d'avoir pu trouver des fincancements pour terminer ce projet, j'ai rejoint un studio de jeux mobile crée par <strong>Voodoo</strong> appelé <strong>Ripe Groove Lab</strong> ayant pour ambition de développer des jeux <strong>Web3</strong>. 
+            Faute d'avoir pu trouver des financements pour terminer ce projet, j'ai rejoint un studio de jeux mobile crée par <strong>Voodoo</strong> appelé <strong>Ripe Groove Lab</strong> ayant pour ambition de développer des jeux <strong>Web3</strong>. 
             Après avoir travaillé pendant 7 mois sur 3 jeux différents, le studio a fermé et je suis maintenant à la recherche de mon prochain emploi.  
         </p>
 
