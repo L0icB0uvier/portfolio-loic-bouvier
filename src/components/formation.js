@@ -131,7 +131,7 @@ const Formation = () => {
             Infallible Code
           </a>{" "}
           pour le C#. Je suis constamment l'évolution des tech et des pratiques de l'industrie à travers les conférences Unity et GDC. Finalement, j'ai
-          perfectionné ma compréhension du langage C# à l’aide de l’ouvrage
+          perfectionné ma compréhension du langage C# à l’aide de l’ouvrage{" "}
           <a
             href="https://www.albahari.com/nutshell/"
             target="_blank"
