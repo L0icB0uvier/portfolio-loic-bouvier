@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Portfolio`,
-    description: `This is the portfolio of Loïc Bouvier, a Unity Game Developer with 5 years of experience on create in games.`,
+    title: `Portfolio Loïc Bouvier`,
+    description: `Portfolio de Loïc Bouvier. Développeur de jeux vidéo avec 7 ans d'expérience sur Unity.`,
     author: `Loïc Bouvier`,
     siteUrl: `https://loicbouvier-gamedev.com/`,
   },
