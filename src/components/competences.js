@@ -52,7 +52,7 @@ const Competences = () => {
           <SkillBar skillName="Trello, Jira, Notion" skillProcifiency={80} />
           <SkillBar skillName="Méthode AGILE" skillProcifiency={80} />
           <SkillBar skillName="Mindmapping tools" skillProcifiency={100} />
-          <SkillBar skillName="Diagram de Gant" skillProcifiency={100} />
+          <SkillBar skillName="Diagrammes de Gant" skillProcifiency={100} />
         </div>
       </div>
     </div>
