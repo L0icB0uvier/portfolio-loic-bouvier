@@ -19,7 +19,7 @@ const Experience = () => {
         <p>
           Après une courte expérience sur <strong>Unreal Engine</strong>, je
           suis passé sur <strong>Unity</strong> et, avec l’aide d’un artiste,
-          j'ai développé entre 2017 et 2022 un jeu de
+          j'ai développé entre 2016 et 2022 un jeu de
           Puzzle/Aventure en 2D trimétrique appelé <strong>Synchron</strong>.
         </p>
         <p>
@@ -30,7 +30,7 @@ const Experience = () => {
         </p>
         <p> 
             Faute d'avoir pu trouver des fincancements pour terminer ce projet, j'ai rejoint un studio de jeux mobile crée par <strong>Voodoo</strong> appelé <strong>Ripe Groove Labs</strong> ayant pour ambition de développer des jeux <strong>Web3</strong>. 
-            Après avoir travaillé pendant 7 mois sur 3 jeux différents, le studio a fermé ses portes et je suis maintenant à la recherche de mon prochain emploi.  
+            Après avoir travaillé pendant 7 mois sur 3 jeux différents, le studio a fermé ses portes et j'ai commencé à travailler en Freelance. Ma plus grosse mission a été la réalisation d'une démo pour le jeu Kosmocean du studio Warp Zone Corporation.  
         </p>
 
         <svg

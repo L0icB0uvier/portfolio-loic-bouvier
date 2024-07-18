@@ -24,15 +24,14 @@ const About = () => {
               <div className={AboutStyles.text}>
                 <p>
                   Passionné de jeux vidéo depuis mon plus jeune âge, je suis
-                  un développeur autodidacte avec 5 ans d'expérience sur <strong>Unity</strong>.
+                  un développeur autodidacte avec 8 ans d'expérience sur <strong>Unity</strong>.
                 </p>
                 <p style={{ marginBottom: 0 }}>
                   J’aime par-dessus tout <strong>résoudre des problèmes</strong>
                   , ce qui m’a permis d’être instantanément stimulé par le{" "}
                   <strong>Game Design</strong> et la{" "}
                   <strong>Programmation</strong>. Aujourd’hui, rien ne
-                  m’intéresse plus que de travailler sur un projet de jeu vidéo
-                  sur lequel j’ai une vision d’ensemble et qui nécessite
+                  m’intéresse plus que de travailler sur un projet qui nécessite
                   d’apprendre constamment de nouvelles compétences.
                 </p>
               </div>
