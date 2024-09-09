@@ -31,10 +31,12 @@
   margin: 0;
   font-size: 1.5rem;
   text-transform: uppercase;
+  font-family: "BankGothic";
+  letter-spacing: 4px;
 }
 
 .sectionLink:hover {
-  color: var(--text-color-header-hover);
+  text-decoration: underline;
 }
 
 .menuButton {
@@ -48,7 +50,7 @@
 }
 
 .sectionLink:hover .active {
-  color: var(--color-band);
+
   text-decoration: underline;
 }
 
@@ -60,7 +62,7 @@
   .anchorContainer {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 70px;
     padding-right: 30px;
     align-items: center;
   }

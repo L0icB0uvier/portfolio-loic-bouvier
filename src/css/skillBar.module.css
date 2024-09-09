@@ -1,9 +1,9 @@
 .barContainer {
-  border: solid 2px var(--color-band);
+  border: solid 2px var(--color-header);
 }
 
 .barFill {
-  background-color: var(--color-band);
+  background-color: var(--color-header);
 }
 
 .barFill_master {

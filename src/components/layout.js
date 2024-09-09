@@ -26,10 +26,13 @@ const Layout = ({ children }) => {
         <footer
           style={{
             marginTop: `10px`,
+            marginBottom: `10px`,
             fontSize: `var(--font-sm)`,
           }}
         >
-          <p style={{ textAlign: `center` }}>
+          <p style={{ 
+            textAlign: `center`,
+            marginBottom:'0px' }}>
             2022 L.BOUVIER - Tous droits réservés
           </p>
         </footer>

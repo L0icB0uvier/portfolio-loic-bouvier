@@ -9,7 +9,7 @@ const CV = () => {
   return (
     <section id="resume" className={CVStyles.sectionWrapper}>
       <div className={CVStyles.containerWrapper}>
-        <SectionTitle title="03 - CV" />
+        <SectionTitle title="CV" />
         <div className={CVStyles.mainContainer}>
           <Competences />
           <Experience />

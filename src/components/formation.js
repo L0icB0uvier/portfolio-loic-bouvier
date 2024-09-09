@@ -60,7 +60,7 @@ const Formation = () => {
             rel="noreferrer"
             className={FormationStyles.link}
           >
-            "A Theory Of Fun"{" "}
+            "A Theory Of Fun"
           </a>
           ,{" "}
           <a
@@ -78,9 +78,9 @@ const Formation = () => {
             rel="noreferrer"
             className={FormationStyles.link}
           >
-            "An Architectural Approach to Level Design"{" "}
+            "An Architectural Approach to Level Design"
           </a>
-          and{" "}
+          {" "}and{" "}
           <a
             href="https://www.goodreads.com/book/show/16269919-a-game-design-vocabulary"
             target="_blank"

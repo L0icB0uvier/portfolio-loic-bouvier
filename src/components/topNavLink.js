@@ -8,16 +8,16 @@ const useStyles = makeStyles(theme => ({
     zIndex: 10,
     position: "fixed",
     right: "1vh",
-    backgroundColor: "#DCDCDC",
-    color: "black",
+    backgroundColor: "#282828",
+    color: "white",
     "&:hover, &.Mui-focusVisible": {
       transition: "0.3s",
-      color: "#397BA6",
-      backgroundColor: "#DCDCDC",
+      color: "white",
+      backgroundColor: "#91161a",
     },
     [theme.breakpoints.up("xs")]: {
       right: "5%",
-      backgroundColor: "rgb(220,220,220,0.7)",
+      backgroundColor: "#282828",
       bottom: "4vh",
     },
     [theme.breakpoints.up("lg")]: {

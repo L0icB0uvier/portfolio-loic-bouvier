@@ -6,6 +6,7 @@
   text-decoration: none;
   transition: all 0.5s;
   align-items: center;
+  fill: white;
 }
 
 .container:hover {
@@ -13,11 +14,16 @@
 }
 
 .contactText {
-  color: var(--text-color-band);
   margin: 0;
   text-align: left;
   padding-left: 16px;
   font-weight: 500;
+  color: white;
+}
+
+.container:hover {
+  color: var(--text-color-band-hover);
+  fill: var(--text-color-band-hover);
 }
 
 .container:hover .contactText {

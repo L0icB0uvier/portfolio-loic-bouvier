@@ -9,18 +9,17 @@ const Contact = () => {
       <div className={ContactStyles.containerWrapper}>
         <div className={ContactStyles.mainContainer}>
           <h1 className={ContactStyles.title}>Contact</h1>
-          <p className={ContactStyles.text}>
-            Je suis actuellement en recherche d'un poste qui saura mettre à
+          {/* <p className={ContactStyles.text}>
+            A la recherche d'un poste qui saura mettre à
             profit mes compétences.
           </p>
           <p className={ContactStyles.text}>
-            N'hésitez pas à me contacter si mon profil vous intéresse et
-            voudriez en savoir plus!
-          </p>
+            N'hésitez pas à me contacter si mon profil vous intéresse.
+          </p> */}
           <div className={ContactStyles.infoWrapper}>
             <ul className={ContactStyles.infoContainer}>
               <li className={ContactStyles.contactList}>
-                <ContactInfo title="Age" value="32 ans" />
+                <ContactInfo title="Age" value="33 ans" />
               </li>
               <li className={ContactStyles.contactList}>
                 {" "}

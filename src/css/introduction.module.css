@@ -18,7 +18,9 @@
 }
 
 .title {
-  color: var(--text-color-band);
+  color: var(--text-color);
+  font-family: BankGothic;
+  text-transform: uppercase;
   font-size: 3rem;
   margin: 0;
 }
@@ -41,7 +43,7 @@
 
 .contactButton {
   border: solid 3px;
-  border-color: var(--text-color-band);
+  border-color: var(--text-color);
   border-radius: 15px;
   width: 250px;
   text-decoration: none;
@@ -55,7 +57,7 @@
 }
 
 .contactButtonText {
-  color: var(--text-color-band);
+  color: var(--text-color);
   text-align: center;
   margin: 5px 0;
   transition: all 0.5s;
@@ -82,13 +84,13 @@
   }
 
   .title {
-    color: var(--text-color-band);
+    color: var(--text-color);
     font-size: 4.5rem;
     margin: 0;
   }
 
   .subtitle {
-    color: var(--text-color-band);
+    color: var(--text-color);
     font-size: 2.5rem;
     font-weight: 700;
     margin: 0;
@@ -96,7 +98,7 @@
   }
 
   .description {
-    color: var(--text-color-band);
+    color: var(--text-color);
     font-weight: 400;
     margin: 8px 0px;
     width: 80%;

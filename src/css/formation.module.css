@@ -18,6 +18,7 @@
 
 .link:hover{
   text-decoration: underline;
+  color: var(--text-color-band-hover);
 }
 
 @media screen and (--large-screen) {

@@ -38,7 +38,7 @@ const Portfolio = () => {
         <path d="M0 32 L 200 32 L 180 0 L 20 0z"></path>
       </svg>
       <div className={PortfolioStyles.containerWrapper}>
-        <SectionTitle title="02 - Portfolio" />
+        <SectionTitle title="Portfolio" />
 
         <div className={PortfolioStyles.mainContainer}>
           <div className={PortfolioStyles.projectsWrapper}>

@@ -38,6 +38,17 @@ function SamplePrevArrow(props) {
   )
 }
 
+function DisplayVideo ({videoURL, videoTitle}){
+  if(videoURL != ""){
+    return <Video
+        videoSrcURL={videoURL}
+        videoTitle={videoTitle}
+    />
+  }
+
+  else return null;
+}
+
 const ProjectPage = ({ data }) => {
   const settings = {
     autoPlay: true,
@@ -116,10 +127,9 @@ const ProjectPage = ({ data }) => {
           </h1>
           <h2>Présentation du projet</h2>
           <p>{data.mdx.frontmatter.longDescription}</p>
-          <Video
-            videoSrcURL={data.mdx.frontmatter.video}
-            videoTitle={data.mdx.frontmatter.video_title}
-          />
+          
+          <DisplayVideo videoURL={data.mdx.frontmatter.video} videoTitle={data.mdx.frontmatter.video_title} />
+          
           <MDXRenderer>{data.mdx.body}</MDXRenderer>
           <Slider {...settings} className={ProjectPageStyles.slider}>
             {data.mdx.frontmatter.galery_images.map(node => (

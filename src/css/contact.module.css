@@ -9,7 +9,7 @@
 }
 
 .containerWrapper {
-  background-color: var(--color-band);
+  background-color: var(--color-header);
 }
 
 .mainContainer {
@@ -22,16 +22,21 @@
 
 .title {
   text-align: center;
-  color: var(--text-color-band);
+  text-transform: uppercase;
+  font-family: BankGothic;
+  color: white;
   font-size: 4rem;
 }
 
 .text {
   text-align: center;
-  color: var(--text-color-band);
+  color: white;
+  margin: 0;
 }
 
+
 .infoWrapper {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -48,16 +53,12 @@
   gap: 10px;
 }
 
-.contactLogo {
-  fill: var(--text-color-band);
-}
-
-.contactLogo:hover {
-  fill: var(--text-color-band-hover);
-}
-
 .contactList {
   list-style: none;
+}
+
+.contactList:hover{
+  fill: var(--text-color-band-hover);
 }
 
 @media screen and (--large-screen) {

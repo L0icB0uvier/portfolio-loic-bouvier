@@ -5,6 +5,7 @@
 
 .title {
   color: var(--text-section-title);
+  font-family: BankGothic;
   font-size: 2rem;
   margin-bottom: 10px;
   text-align: left;
@@ -28,5 +29,6 @@
     font-size: 2rem;
     margin-bottom: 10px;
     text-align: center;
+    text-transform: uppercase;
   }
 }
