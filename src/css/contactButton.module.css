@@ -19,6 +19,9 @@
   padding-left: 16px;
   font-weight: 500;
   color: white;
+  font-size: clamp(2px, 4cqw, 1rem);
+  text-wrap: nowrap;
+
 }
 
 .container:hover {
@@ -28,4 +31,10 @@
 
 .container:hover .contactText {
   color: var(--text-color-band-hover);
+}
+
+@media screen and (--large-screen) {
+  .contactText {
+    font-size: var(--font-md);
+  }
 }

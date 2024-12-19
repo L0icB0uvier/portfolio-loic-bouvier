@@ -21,20 +21,25 @@
   color: var(--text-color);
   font-family: BankGothic;
   text-transform: uppercase;
-  font-size: 3rem;
+  align-self: stretch;
+  text-align: center;
+  
+  font-size: 8cqw;
+  flex-grow: 1;
   margin: 0;
+  text-wrap: nowrap;
 }
 
 .subtitle {
-  color: var(--text-color-band);
-  font-size: 1.5rem;
+  color: var(--text-color);
+  font-size: 4cqw;
   font-weight: 700;
   margin: 0;
   text-align: center;
 }
 
 .description {
-  color: var(--text-color-band);
+  color: var(--text-color);
   font-weight: 400;
   margin: 8px 0px;
   width: 100%;

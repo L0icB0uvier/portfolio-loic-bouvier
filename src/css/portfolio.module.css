@@ -41,6 +41,11 @@
   justify-items: center;
 }
 
+.title{
+  text-align: center;
+  font-size: 6cqw;
+}
+
 .text {
   margin-bottom: 50px;
 }
@@ -79,6 +84,10 @@
     gap: 2%;
     align-content: center;
     justify-content: center;
+  }
+
+  .title{
+    display: none;
   }
 
   .handleTop {

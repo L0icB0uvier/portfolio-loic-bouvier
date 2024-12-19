@@ -39,8 +39,8 @@ const Portfolio = () => {
       </svg>
       <div className={PortfolioStyles.containerWrapper}>
         <SectionTitle title="Portfolio" />
-
         <div className={PortfolioStyles.mainContainer}>
+          <h2 className={PortfolioStyles.title}>Portfolio</h2>
           <div className={PortfolioStyles.projectsWrapper}>
             {data.allMdx.nodes.map(node => (
               <ProjectButton

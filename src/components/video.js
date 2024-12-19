@@ -2,7 +2,6 @@ import React from "react"
 import * as VideoStyles from "../css/video.module.css"
 
 const Video = ({ videoSrcURL, videoTitle, ...props }) => (
-  
   <iframe
     className={VideoStyles.video}
     src={videoSrcURL}

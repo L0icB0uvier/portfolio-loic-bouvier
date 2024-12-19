@@ -1,9 +1,8 @@
 .project {
   padding: 0;
-  width: 512;
-  height: 400;
+  max-width: 512px;
   background-color: var(--color-code-bg-primary);
-
+  align-self:center;
   border-radius: 5px;
   overflow: hidden;
   transition: all 0.5s;
@@ -42,12 +41,16 @@
   margin: auto;
   text-align: center;
   color: black;
+  font-size: clamp(10px, 6cqw, 1.5rem);
+  flex-grow: 2;
 }
 
 .projectDescription {
   margin: auto;
   text-align: center;
   color: black;
+  font-size: clamp(10px, 4cqw, 1.2rem);
+  flex-grow: 1;
 }
 
 .project:hover .projectTitle {

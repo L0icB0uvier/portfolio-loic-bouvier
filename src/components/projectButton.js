@@ -12,9 +12,7 @@ const ProjectButton = ({ path, image, imageAlt, name, description }) => {
           <GatsbyImage image={image} alt={imageAlt} />
           <div className={ProjectButtonStyle.projectText}>
             <h2 className={ProjectButtonStyle.projectTitle}>{name}</h2>
-            <p className={ProjectButtonStyle.projectDescription}>
-              {description}
-            </p>
+            <p className={ProjectButtonStyle.projectDescription}>{description}</p>
             <NavigateNext className={ProjectButtonStyle.arrow} />
           </div>
         </div>
