@@ -250,3 +250,10 @@ pre tt:after {
 .contactLogo {
   fill: var(--text-color-band);
 }
+
+@media screen and (--large-screen) {
+  h2{
+    text-transform: uppercase;
+    margin: 16px 0;
+  }
+}
