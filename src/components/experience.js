@@ -34,7 +34,15 @@ const Experience = () => {
         </p>
 
         <p>
-          J'ai ensuite commencé mon activité de Freelance que je poursuis actuellement. Ma plus grosse mission a été la réalisation d'une démo pour le jeu Kosmocean du studio Warp Zone Corporation soutenu par le CNC. De plus, Je collabore régulièrement avec {" "} 
+          J'ai ensuite commencé mon activité de Freelance que je poursuis actuellement. Ma plus grosse mission a été la réalisation d'une démo pour le jeu Kosmocean du studio {" "}
+          <a
+            href="https://warpzonecorp.com/"
+            target="_blank"
+            rel="noreferrer"
+            className={ExperienceStyles.link}
+          >
+            Warp Zone Corporation
+          </a> {""}  soutenu par le CNC. De plus, Je collabore régulièrement avec {" "} 
           <a
             href="https://snackinteractive.fr/"
             target="_blank"
