@@ -13,6 +13,10 @@
   text-align: left;
 }
 
+.link{
+  font-weight: 500;
+}
+
 .handleTop {
   position: absolute;
   top: -10px;

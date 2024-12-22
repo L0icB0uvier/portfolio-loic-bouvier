@@ -44,6 +44,7 @@
 .title{
   text-align: center;
   font-size: 6cqw;
+  margin-bottom: 32px;
 }
 
 .text {
@@ -84,10 +85,13 @@
     gap: 2%;
     align-content: center;
     justify-content: center;
+    margin: 64px 0;
   }
 
   .title{
-    display: none;
+    text-align: left;
+    font-size: 1.5rem;
+    margin-bottom: 100px;
   }
 
   .handleTop {

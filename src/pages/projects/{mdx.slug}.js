@@ -49,6 +49,57 @@ function DisplayVideo ({videoURL, videoTitle}){
   else return null;
 }
 
+function DisplayLinks({links}){
+  if(links !== null){
+    return <div className={ProjectPageStyles.linkContainer}>
+              <div className={ProjectPageStyles.link}>
+                {links.map(node => (
+                  <div className={ProjectPageStyles.link} key={node.linkActionName}>
+                    <svg
+                      width="2"
+                      height="20"
+                      viewBox="0 0 2 20"
+                      className={ProjectPageStyles.svgLine}
+                    >
+                      <line
+                        x1="1"
+                        y1="0"
+                        x2="1"
+                        y2="20"
+                        stroke="black"
+                        strokeWidth={2}
+                      />
+                    </svg>
+                    <ProjectLink
+                      url={node.url}
+                      image={node.logo.childImageSharp.gatsbyImageData}
+                      image_alt={node.logo.name}
+                      linkActionName={node.linkActionName}
+                    />
+                  </div>
+                ))}
+                <svg
+                  width="2"
+                  height="100"
+                  viewBox="0 0 2 100"
+                  className={ProjectPageStyles.svgLine}
+                >
+                  <line
+                    x1="1"
+                    y1="0"
+                    x2="1"
+                    y2="100"
+                    stroke="black"
+                    strokeWidth={2}
+                  />
+                </svg>
+              </div>
+            </div>
+  }
+
+  else return null;
+}
+
 const ProjectPage = ({ data }) => {
   const settings = {
     autoPlay: true,
@@ -76,7 +127,8 @@ const ProjectPage = ({ data }) => {
             />
           </div>
         </div>
-        <div className={ProjectPageStyles.linkContainer}>
+        <DisplayLinks links={data.mdx.frontmatter.links}/>
+        {/* <div className={ProjectPageStyles.linkContainer}>
           <div className={ProjectPageStyles.link}>
             {data.mdx.frontmatter.links.map(node => (
               <div className={ProjectPageStyles.link} key={node.linkActionName}>
@@ -119,7 +171,7 @@ const ProjectPage = ({ data }) => {
               />
             </svg>
           </div>
-        </div>
+        </div> */}
 
         <div className={ProjectPageStyles.mainContainer}>
           <h1 className={ProjectPageStyles.projectTitle}>

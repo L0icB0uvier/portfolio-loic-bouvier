@@ -130,7 +130,7 @@ const Formation = () => {
           >
             Infallible Code
           </a>{" "}
-          pour le C#. Je suis constamment l'évolution des tech et des pratiques de l'industrie à travers les conférences Unity et GDC. Finalement, j'ai
+          pour le C#. Je suis constamment l'évolution des techs et des pratiques de l'industrie à travers les conférences Unity et GDC. Finalement, j'ai
           perfectionné ma compréhension du langage C# à l’aide de l’ouvrage{" "}
           <a
             href="https://www.albahari.com/nutshell/"
@@ -163,7 +163,15 @@ const Formation = () => {
           >
             "Essential Mathematics for Games and Interactive Application"
           </a>{" "}
-          de James M.Van Verth.
+          de James M.Van Verth et en suivant l'exeptionnelle chaine youtube {" "}
+          <a
+            href="https://www.youtube.com/@3blue1brown"
+            target="_blank"
+            rel="noreferrer"
+            className={FormationStyles.link}
+          >
+            "3Blue1Brown"
+          </a>{"."}
         </p>
       </div>
     </div>

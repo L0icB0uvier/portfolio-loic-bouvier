@@ -29,8 +29,20 @@ const Experience = () => {
           appris à apprendre.
         </p>
         <p> 
-            Faute d'avoir pu trouver des fincancements pour terminer ce projet, j'ai rejoint un studio de jeux mobile crée par <strong>Voodoo</strong> appelé <strong>Ripe Groove Labs</strong> ayant pour ambition de développer des jeux <strong>Web3</strong>. 
-            Après avoir travaillé pendant 7 mois sur 3 jeux différents, le studio a fermé ses portes et j'ai commencé à travailler en Freelance. Ma plus grosse mission a été la réalisation d'une démo pour le jeu Kosmocean du studio Warp Zone Corporation.  
+          Faute d'avoir pu trouver des fincancements pour terminer ce projet, j'ai rejoint un studio de jeux mobile crée par <strong>Voodoo</strong> appelé <strong>Ripe Groove Labs</strong> ayant pour ambition de développer des jeux <strong>Web3</strong>. 
+          Après avoir travaillé pendant 7 mois sur 3 jeux différents, le studio a fermé ses portes. 
+        </p>
+
+        <p>
+          J'ai ensuite commencé mon activité de Freelance que je poursuis actuellement. Ma plus grosse mission a été la réalisation d'une démo pour le jeu Kosmocean du studio Warp Zone Corporation soutenu par le CNC. De plus, Je collabore régulièrement avec {" "} 
+          <a
+            href="https://snackinteractive.fr/"
+            target="_blank"
+            rel="noreferrer"
+            className={ExperienceStyles.link}
+          >
+            Snack Interactive
+          </a>{""} sur des projets de types <strong>applications intéractives</strong> pour des clients variés.
         </p>
 
         <svg

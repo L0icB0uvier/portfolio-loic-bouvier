@@ -1,0 +1,54 @@
+---
+order: "3"
+name: "Teams Up"
+shortDescription: "Quizz Co-op local"
+longDescription: "Création d'un jeu de quizz en réseau commandé par l'école de commerce EM Normandie. La finalité du projet est de tester les connaissances des étudiants dans un contexte de jeu de Quiz compétitif."
+image: "./teams-up-logo.webp"
+image_alt: "Teams Up Logo"
+
+video: ""
+video_title: ""
+
+galery-images:
+  - image: "./gallery/teams-up-1.webp"
+    image_alt: "Teams'up Scrennshot 1"
+  - image: "./gallery/teams-up-2.webp"
+    image_alt: "Teams'up Scrennshot 2"
+  - image: "./gallery/teams-up-3.webp"
+    image_alt: "Teams'up Scrennshot 3"
+  - image: "./gallery/teams-up-4.webp"
+    image_alt: "Teams'up Scrennshot 4"  
+  - image: "./gallery/teams-up-5.webp"
+    image_alt: "Teams'up Scrennshot 5"  
+  - image: "./gallery/teams-up-6.webp"
+    image_alt: "Teams'up Scrennshot 6"
+
+link: ""
+---
+
+## Description du Projet
+
+Teams'up est un jeu de Quizz ayant pour but d'être joué entre 2 et 6 équipes. 
+
+Le jeu a nécessité le développement de 2 applications:
+- Une application de suivi développé pour Windows et affiché sur un grand écran permettant de créer une session de jeu et de suivre l'avancé de la partie.
+- Une application de jeu développé pour Android et affiché sur des tablettes. Chaque équipe participante se connecte à la session de jeu et répond ensuite aux questions à l'aide de cette application.
+
+Afin de débuter une sessions, les organisateurs du jeu créent une session sur l'application windows qui expose ensuite un QR code permettant aux différentes équipes de rejoindre la session. 
+Une fois les équipes connectées, les organisateurs peuvent lancer la partie. Ensuite chaque équipe scan des QR codes imprimés sur des cartes physiques permettant de récupérer le contenu des questions à afficher dans l'application Android. 
+En fonction de leurs réponses chaque équipe gagne ou perd des points et l'application de suivi affiche en temps réel les scores et l'avancé de chaque équipe.
+
+Ce projet a nécessité de répondre à plusieurs challenges techniques intéressants:
+- Mise en place d'une solution de Networking permettant de connecter 2 applications différentes
+- Communication avec une base de données externe à l'aide d'une API
+- Génération et lecture de QR code pour améliorer l'expérience utilisateur
+
+## Mon rôle sur le projet
+
+En partenariat avec Snack Interactive qui s'occupait de liaison client, j'ai été en charge de tout l'aspect technique du projet dans Unity:
+- Mise en place de la solution Networking à l'aide d'Unity Relay afin d'éviter les problèmes de Firewall
+- Système de reconnection à la session en cas de déconnection d'un client
+- Création d'un système de Messaging custom en utilisant Unity Transport permettant aux applications jeu de communiquer avec l'application de suivi et vice-versa
+- Intégration et customisation d'un Asset Third Party permettant la génération et la lecture de QR code
+- Récupération des questions au format JSON à l'aide de Web Requests et génération des questions basé sur les données récupérées
+- Création de l'UI basé sur les designs créés par les graphistes
