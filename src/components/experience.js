@@ -34,7 +34,17 @@ const Experience = () => {
         </p>
 
         <p>
-          J'ai ensuite commencé mon activité de Freelance que je poursuis actuellement. Ma plus grosse mission a été la réalisation d'une démo pour le jeu Kosmocean du studio {" "}
+          J'ai ensuite commencé mon activité de Freelance que je poursuis actuellement. Ma plus grosse mission a été la réalisation d'une démo pour le jeu {" "}
+          <a
+            href="https://store.steampowered.com/app/2144610/Kosmocean__The_Endless_Sea/?l=french"
+            target="_blank"
+            rel="noreferrer"
+            className={ExperienceStyles.link}
+          >
+            Kosmocean
+          </a>
+          
+          {" "} du studio {" "}
           <a
             href="https://warpzonecorp.com/"
             target="_blank"
@@ -50,7 +60,7 @@ const Experience = () => {
             className={ExperienceStyles.link}
           >
             Snack Interactive
-          </a>{""} sur des projets de types <strong>applications intéractives</strong> pour des clients variés.
+          </a>{""} sur des projets d'applications intéractives pour différents clients.
         </p>
 
         <svg

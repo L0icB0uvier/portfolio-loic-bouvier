@@ -6,16 +6,29 @@ const Presentation = () => {
   return (
     <section id="prensentation" className={IntroductionStyles.wrapper}>
       <div className={IntroductionStyles.mainContainer}>
-        <h1 className={IntroductionStyles.title}>Loïc Bouvier</h1>
+        
+        <h1 className={IntroductionStyles.title}>
+          Loïc Bouvier
+        </h1>
+        
         <h2 className={IntroductionStyles.subtitle}>
           Développeur <strong>UNITY</strong>
         </h2>
-        <p className={IntroductionStyles.description}>Le développement de jeux, un hobby devenu une véritable passion.</p>
-        <p className={IntroductionStyles.description}>Je m'efforce constamment à me perfectionner en tant que programmeur et à explorer de nouvelles technologies en m'impliquant sur des projets stimulants autant sur le plan créatif que technique.
-        </p>
+
+        <h3 className={IntroductionStyles.platforms}>
+          PC / Console / Mobile / VR / AR
+        </h3>
+
         <p className={IntroductionStyles.description}>
-          Je recherche un poste qui saura mettre à
-          profit mes compétences.
+          Véritable couteau suisse avec plus de 8 ans d'expérience sur Unity, je suis en mesure de développer n'importe quel type de jeux et applications.
+        </p>
+
+        <p className={IntroductionStyles.description}>
+          Je propose mes services en Freelance pour le développement de jeux vidéo ou d'applications intéractive. 
+        </p>
+        
+        <p className={IntroductionStyles.description}>
+          Je suis également interessé par des offres d'emploi en région Rhône-Alpes ou en télétravail.
         </p>
 
         <Link to="/#contact" className={IntroductionStyles.contactButton}>

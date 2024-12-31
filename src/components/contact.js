@@ -37,7 +37,6 @@ const Contact = () => {
                   name="loic.bouvier@protonmail.com"
                   svg={
                     <svg
-                      className={ContactStyles.contactLogo}
                       xmlns="http://www.w3.org/2000/svg"
                       id="Layer_1"
                       x="0"
@@ -59,7 +58,6 @@ const Contact = () => {
                   name="github.com/L0icB0uvier"
                   svg={
                     <svg
-                      className={ContactStyles.contactLogo}
                       xmlns="http://www.w3.org/2000/svg"
                       width={32}
                       height={32}
@@ -84,7 +82,6 @@ const Contact = () => {
                   name="linkedin.com/in/loïc-bouvier/"
                   svg={
                     <svg
-                      className={ContactStyles.contactLogo}
                       xmlns="http://www.w3.org/2000/svg"
                       data-name="Layer 1"
                       width={32}

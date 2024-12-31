@@ -38,6 +38,11 @@
   text-align: center;
 }
 
+.platforms {
+  margin: 0;
+  font-size: 3cqw;
+}
+
 .description {
   color: var(--text-color);
   font-weight: 400;
@@ -100,6 +105,11 @@
     font-weight: 700;
     margin: 0;
     text-align: center;
+  }
+
+  .platforms {
+    margin: 0;
+    font-size: 1.5rem;
   }
 
   .description {
