@@ -20,17 +20,13 @@ const Presentation = () => {
         </h3>
 
         <p className={IntroductionStyles.description}>
-          Véritable couteau suisse avec plus de 8 ans d'expérience sur Unity, je suis en mesure de développer n'importe quel type de jeux et applications.
+          Véritable couteau suisse avec plus de <strong>8 ans d'expérience sur Unity</strong>, je peux prendre en charge le développement d'une grande variété de projets.
         </p>
 
         <p className={IntroductionStyles.description}>
-          Je propose mes services en Freelance pour le développement de jeux vidéo ou d'applications intéractive. 
+          Je propose mes services en Freelance pour le développement de jeux vidéo ou d'applications intéractives et suis également intéressé par des offres d'emploi en région <strong>Rhône-Alpes</strong> ou <strong>full-remote</strong>.
         </p>
         
-        <p className={IntroductionStyles.description}>
-          Je suis également interessé par des offres d'emploi en région Rhône-Alpes ou en télétravail.
-        </p>
-
         <Link to="/#contact" className={IntroductionStyles.contactButton}>
           <h2 className={IntroductionStyles.contactButtonText}>Contactez-moi !</h2>
         </Link>

@@ -22,17 +22,22 @@ const About = () => {
                   className={AboutStyles.photo}
                 />
               <div className={AboutStyles.text}>
+                {/* <p>
+                  Passionné de jeux vidéo depuis mon plus jeune âge, j'ai appris le développement en autodidacte avec comme objectif de créer un studio de jeu vidéo.
+                </p> */}
+
                 <p>
-                  Passionné de jeux vidéo depuis mon plus jeune âge, je suis
-                  un développeur autodidacte avec 8 ans d'expérience sur <strong>Unity</strong>.
+                  Diplomé d'école de commerce en 2016, j'ai vécu 6 ans au Vietnam où j'ai acquis un niveau Bilingue en Anglais, découvert une autre culture de l'intérieur et appris le développement <strong>Unity</strong>.
                 </p>
+
+                <p>
+                  D'un naturel curieux et solutionniste, j'ai instantanément été stimulé par le développement de jeux vidéo et la programmation et n'ai eu cesse d'améliorer mes compétences au point de devenir un développeur professionnel.
+                </p>
+
                 <p style={{ marginBottom: 0 }}>
-                  J’aime par-dessus tout <strong>résoudre des problèmes</strong>
-                  , ce qui m’a permis d’être instantanément stimulé par le{" "}
-                  <strong>Game Design</strong> et la{" "}
-                  <strong>Programmation</strong>. Aujourd’hui, rien ne
-                  m’intéresse plus que de travailler sur un projet stimulant et challengeant.
+                  Autonome, polyvalent et passionné, je cherche aujourd'hui à rejoindre une structure qui saura mettre à profit mon savoir-faire et me donnera l'opportunité des travailler sur des projets passionnants et formateurs.
                 </p>
+
               </div>
               <a href="/resume.pdf" target="_blank" className={AboutStyles.downloadResumeButton}>
                 <h2 className={AboutStyles.resumeButtonText}>
