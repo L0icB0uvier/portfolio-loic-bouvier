@@ -35,6 +35,9 @@
     "@babel/core": "^7.29.7",
     "prettier": "^2.7.1"
   },
+  "overrides": {
+    "htmlparser2": "8.0.2"
+  },
   "keywords": [
     "gatsby"
   ],
