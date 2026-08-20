@@ -1,7 +1,6 @@
 import * as React from "react"
 import Layout from "../../components/layout"
 import { graphql } from "gatsby"
-import { MDXRenderer } from "gatsby-plugin-mdx"
 import { GatsbyImage } from "gatsby-plugin-image"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
@@ -45,12 +44,11 @@ function DisplayVideo ({videoURL, videoTitle}){
         videoTitle={videoTitle}
     />
   }
-
   else return null;
 }
 
 function DisplayLinks({links}){
-  if(links !== null){
+  if(links !== null && links !== undefined){
     return <div className={ProjectPageStyles.linkContainer}>
               <div className={ProjectPageStyles.link}>
                 {links.map(node => (
@@ -72,8 +70,8 @@ function DisplayLinks({links}){
                     </svg>
                     <ProjectLink
                       url={node.url}
-                      image={node.logo.childImageSharp.gatsbyImageData}
-                      image_alt={node.logo.name}
+                      image={node.logo?.childImageSharp?.gatsbyImageData}
+                      image_alt={node.logo?.name}
                       linkActionName={node.linkActionName}
                     />
                   </div>
@@ -96,11 +94,10 @@ function DisplayLinks({links}){
               </div>
             </div>
   }
-
   else return null;
 }
 
-const ProjectPage = ({ data }) => {
+const ProjectPage = ({ data, children }) => {
   const settings = {
     autoPlay: true,
     arrows: true,
@@ -128,50 +125,6 @@ const ProjectPage = ({ data }) => {
           </div>
         </div>
         <DisplayLinks links={data.mdx.frontmatter.links}/>
-        {/* <div className={ProjectPageStyles.linkContainer}>
-          <div className={ProjectPageStyles.link}>
-            {data.mdx.frontmatter.links.map(node => (
-              <div className={ProjectPageStyles.link} key={node.linkActionName}>
-                <svg
-                  width="2"
-                  height="20"
-                  viewBox="0 0 2 20"
-                  className={ProjectPageStyles.svgLine}
-                >
-                  <line
-                    x1="1"
-                    y1="0"
-                    x2="1"
-                    y2="20"
-                    stroke="black"
-                    strokeWidth={2}
-                  />
-                </svg>
-                <ProjectLink
-                  url={node.url}
-                  image={node.logo.childImageSharp.gatsbyImageData}
-                  image_alt={node.logo.name}
-                  linkActionName={node.linkActionName}
-                />
-              </div>
-            ))}
-            <svg
-              width="2"
-              height="100"
-              viewBox="0 0 2 100"
-              className={ProjectPageStyles.svgLine}
-            >
-              <line
-                x1="1"
-                y1="0"
-                x2="1"
-                y2="100"
-                stroke="black"
-                strokeWidth={2}
-              />
-            </svg>
-          </div>
-        </div> */}
 
         <div className={ProjectPageStyles.mainContainer}>
           <h1 className={ProjectPageStyles.projectTitle}>
@@ -182,16 +135,20 @@ const ProjectPage = ({ data }) => {
           
           <DisplayVideo videoURL={data.mdx.frontmatter.video} videoTitle={data.mdx.frontmatter.video_title} />
           
-          <MDXRenderer>{data.mdx.body}</MDXRenderer>
-          <Slider {...settings} className={ProjectPageStyles.slider}>
-            {data.mdx.frontmatter.galery_images.map(node => (
-              <GatsbyImage
-                image={node.image.childImageSharp.gatsbyImageData}
-                alt={node.image_alt}
-                key={node.image_alt}
-              />
-            ))}
-          </Slider>
+          {/* ✅ Gatsby v5 / MDX v2 : Le contenu MDX est directement passé via la prop children */}
+          {children}
+
+          {data.mdx.frontmatter.galery_images && (
+            <Slider {...settings} className={ProjectPageStyles.slider}>
+              {data.mdx.frontmatter.galery_images.map(node => (
+                <GatsbyImage
+                  image={node.image.childImageSharp.gatsbyImageData}
+                  alt={node.image_alt}
+                  key={node.image_alt}
+                />
+              ))}
+            </Slider>
+          )}
         </div>
       </div>
     </Layout>
@@ -226,7 +183,6 @@ export const query = graphql`
           }
         }
       }
-      body
     }
   }
 `
