@@ -36,6 +36,7 @@
     "prettier": "^2.7.1"
   },
   "overrides": {
+    "sanitize-html": "2.11.0",
     "htmlparser2": "8.0.2"
   },
   "keywords": [
