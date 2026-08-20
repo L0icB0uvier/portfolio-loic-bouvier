@@ -2,7 +2,7 @@ import React from "react"
 import * as ProjectButtonStyle from "../css/projectButtonStyle.module.css"
 import { Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
-import NavigateNext from "@material-ui/icons/NavigateNext"
+import NavigateNextIcon from "@mui/icons-material/NavigateNext"
 
 const ProjectButton = ({ path, image, imageAlt, name, description }) => {
   return (
@@ -13,7 +13,7 @@ const ProjectButton = ({ path, image, imageAlt, name, description }) => {
           <div className={ProjectButtonStyle.projectText}>
             <h2 className={ProjectButtonStyle.projectTitle}>{name}</h2>
             <p className={ProjectButtonStyle.projectDescription}>{description}</p>
-            <NavigateNext className={ProjectButtonStyle.arrow} />
+            <NavigateNextIcon className={ProjectButtonStyle.arrow} />
           </div>
         </div>
       </Link>

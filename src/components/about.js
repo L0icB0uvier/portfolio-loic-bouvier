@@ -2,7 +2,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
 import * as AboutStyles from "../css/about.module.css"
 import SectionTitle from "./sectionTitle"
-import { Grid } from "@material-ui/core"
+import { Grid } from '@mui/material'
 
 const About = () => {
   return (

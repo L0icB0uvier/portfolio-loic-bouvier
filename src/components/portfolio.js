@@ -7,12 +7,13 @@ import ProjectButton from "./projectButton"
 const Portfolio = () => {
   const data = useStaticQuery(graphql`
     query {
-      allMdx(sort: { order: ASC, fields: frontmatter___order }) {
+      allMdx(sort: { frontmatter: { order: ASC } }) {
         nodes {
           frontmatter {
             name
             shortDescription
             image_alt
+            slug
             image {
               childImageSharp {
                 gatsbyImageData(width: 512)
@@ -20,12 +21,12 @@ const Portfolio = () => {
             }
           }
           id
-          slug
+          gatsbyPath(filePath: "/projects/{mdx.frontmatter__slug}")
         }
       }
     }
   `)
-
+  
   return (
     <section id="portfolio" className={PortfolioStyles.sectionWrapper}>
       <svg

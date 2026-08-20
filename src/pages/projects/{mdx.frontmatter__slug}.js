@@ -11,7 +11,7 @@ import * as ProjectPageStyles from "../../css/project.module.css"
 import "../../css/slick.css"
 import ProjectLink from "../../components/projectLink"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
-import ArrowBackIosSharp from "@material-ui/icons/ArrowBackIosSharp"
+import ArrowBackIosSharp from '@mui/icons-material/ArrowBackIosSharp'
 import Seo from "../../components/seo"
 
 function SampleNextArrow(props) {
@@ -39,7 +39,7 @@ function SamplePrevArrow(props) {
 }
 
 function DisplayVideo ({videoURL, videoTitle}){
-  if(videoURL != ""){
+  if(videoURL !== ""){
     return <Video
         videoSrcURL={videoURL}
         videoTitle={videoTitle}
