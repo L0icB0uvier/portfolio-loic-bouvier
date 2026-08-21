@@ -4,6 +4,8 @@ import SectionTitle from "./sectionTitle"
 import * as PortfolioStyles from "../css/portfolio.module.css"
 import ProjectButton from "./projectButton"
 
+const CATEGORY_ORDER = ["Indépendant", "Voodoo", "Projet d'études", "Freelance"]
+
 const Portfolio = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -14,6 +16,7 @@ const Portfolio = () => {
             shortDescription
             image_alt
             slug
+            category
             image {
               childImageSharp {
                 gatsbyImageData(width: 512)
@@ -26,6 +29,30 @@ const Portfolio = () => {
       }
     }
   `)
+
+  // 1. Groupement des projets par catégorie
+  const projectsByCategory = data.allMdx.nodes.reduce((acc, node) => {
+    // Si la catégorie n'est pas renseignée dans le MDX, on lui donne une valeur par défaut
+    const category = node.frontmatter.category || "Autres"
+    if (!acc[category]) {
+      acc[category] = []
+    }
+    acc[category].push(node)
+    return acc
+  }, {})
+
+  // 2. Tri des clés de catégories selon l'ordre défini dans CATEGORY_ORDER
+  const sortedCategories = Object.keys(projectsByCategory).sort((a, b) => {
+    const indexA = CATEGORY_ORDER.indexOf(a)
+    const indexB = CATEGORY_ORDER.indexOf(b)
+
+    // Si une catégorie n'est pas trouvée dans CATEGORY_ORDER, on la place à la fin
+    if (indexA === -1 && indexB === -1) return a.localeCompare(b)
+    if (indexA === -1) return 1
+    if (indexB === -1) return -1
+
+    return indexA - indexB
+  })
   
   return (
     <section id="portfolio" className={PortfolioStyles.sectionWrapper}>
@@ -41,18 +68,25 @@ const Portfolio = () => {
       <div className={PortfolioStyles.containerWrapper}>
         <SectionTitle title="Portfolio" />
         <div className={PortfolioStyles.mainContainer}>
-          <h2 className={PortfolioStyles.title}>Projets</h2>
-          <div className={PortfolioStyles.projectsWrapper}>
-            {data.allMdx.nodes.map(node => (
-              <ProjectButton
-                path={`/projects/${node.slug}`}
-                image={node.frontmatter.image.childImageSharp.gatsbyImageData}
-                imageAlt={node.frontmatter.image_alt}
-                name={node.frontmatter.name}
-                description={node.frontmatter.shortDescription}
-              />
-            ))}
-          </div>
+
+          {/* Iteration sur les catégories triées */}
+          {sortedCategories.map(category => (
+            <div key={category} className={PortfolioStyles.categoryWrapper}>
+              <h2 className={PortfolioStyles.categoryTitle}>{category}</h2>
+              <div className={PortfolioStyles.projectsWrapper}>
+                {projectsByCategory[category].map(node => (
+                  <ProjectButton
+                    key={node.id}
+                    path={node.gatsbyPath}
+                    image={node.frontmatter.image.childImageSharp.gatsbyImageData}
+                    imageAlt={node.frontmatter.image_alt}
+                    name={node.frontmatter.name}
+                    description={node.frontmatter.shortDescription}
+                  />
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
 
         <svg

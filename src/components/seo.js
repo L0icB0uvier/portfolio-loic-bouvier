@@ -9,7 +9,8 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-function Seo({ description, title, children }) {
+// ✅ Utilisation des paramètres par défaut ES6 directement dans les arguments
+function Seo({ description = "", title = "", children }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -43,13 +44,12 @@ function Seo({ description, title, children }) {
   )
 }
 
-Seo.defaultProps = {
-  description: ``,
-}
+// ❌ Seo.defaultProps a été supprimé ici
 
 Seo.propTypes = {
   description: PropTypes.string,
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
+  children: PropTypes.node,
 }
 
 export default Seo
