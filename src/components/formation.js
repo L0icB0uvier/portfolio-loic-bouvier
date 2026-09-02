@@ -22,156 +22,17 @@ const Formation = () => {
           </a>
           , j'ai entamé l’apprentissage du développement de jeux vidéo en
           autodidacte.
+          En utilisant des ressources en ligne tel que Udemy, Youtube, des livres spécialisés/forums, et surtout grâce à la pratique liée au développement de mon jeu, 
+          j'ai pu acquérir les compétences nécessaires pour créer des jeux vidéo de qualité professionnelle.
         </p>
         <p>
-          J'ai tout d'abord suivi des cours en ligne sur <strong>Udemy</strong>{" "}
-          pour apprendre les bases de la 3D et du C++. Pour l'apprentissage du
-          Game Design, des chaines YouTube telles que{" "}
-          <a
-            href="https://www.youtube.com/extracredits"
-            target="_blank"
-            rel="noreferrer"
-            className={FormationStyles.link}
-          >
-            Extra-Credits
-          </a>{" "}
-          ,{" "}
-          <a
-            href="https://www.youtube.com/c/MarkBrownGMT"
-            target="_blank"
-            rel="noreferrer"
-            className={FormationStyles.link}
-          >
-            Game Maker’s Tool Kit
-          </a>{" "}
-          ou encore{" "}
-          <a
-            href="https://www.youtube.com/c/GameNextDoor01"
-            target="_blank"
-            rel="noreferrer"
-            className={FormationStyles.link}
-          >
-            Game Next Door
-          </a>
-          , m'ont apporté des bases que j'ai ensuite complété en lisant les ouvrages{" "}
-          <a
-            href="https://www.theoryoffun.com/"
-            target="_blank"
-            rel="noreferrer"
-            className={FormationStyles.link}
-          >
-            "A Theory Of Fun"
-          </a>
-          ,{" "}
-          <a
-            href="https://www.theoryoffun.com/"
-            target="_blank"
-            rel="noreferrer"
-            className={FormationStyles.link}
-          >
-            "The Art of Game Design"
-          </a>
-          ,{" "}
-          <a
-            href="https://www.routledge.com/Architectural-Approach-to-Level-Design-Second-edition/Totten/p/book/9780815361367"
-            target="_blank"
-            rel="noreferrer"
-            className={FormationStyles.link}
-          >
-            "An Architectural Approach to Level Design"
-          </a>
-          {" "}and{" "}
-          <a
-            href="https://www.goodreads.com/book/show/16269919-a-game-design-vocabulary"
-            target="_blank"
-            rel="noreferrer"
-            className={FormationStyles.link}
-          >
-            "A Game Design Vocabulary"
-          </a>
-          .
+          Cherchant à me diversifier et à approfondir mes connaissances en informatique, j'ai décidé de reprendre mes études en 2025 en intégrant la 
+          L3 Informatique générale à l'université Grenoble Alpes. Cette formation a été pour moi l'occasion de compléter mes connaissances avancées en programmation avec les principes fondamentaux 
+          des systèmes d'exploitation, des bases de données, des réseaux, de l'algorithmie et de la théorie des langages.
         </p>
         <p>
-          J'ai appris la programmation principalement par la pratique. Cherchant
-          constamment à m'améliorer, j'ai suivi des Youtubers spécialisés dans
-          la programmation tels que{" "}
-          <a
-            href="https://www.youtube.com/c/TheChernoProject"
-            target="_blank"
-            rel="noreferrer"
-            className={FormationStyles.link}
-          >
-            The Cherno
-          </a>{" "}
-          pour C++,{" "}
-          <a
-            href="https://www.youtube.com/user/IAmTimCorey"
-            target="_blank"
-            rel="noreferrer"
-            className={FormationStyles.link}
-          >
-            Tim Correy
-          </a>
-          ,{" "}
-          <a
-            href="https://www.youtube.com/c/Unity3dCollege"
-            target="_blank"
-            rel="noreferrer"
-            className={FormationStyles.link}
-          >
-            Jason Weimann
-          </a>{" "}
-          et{" "}
-          <a
-            href="https://www.youtube.com/c/InfallibleCode"
-            target="_blank"
-            rel="noreferrer"
-            className={FormationStyles.link}
-          >
-            Infallible Code
-          </a>{" "}
-          pour le C#. Je suis constamment l'évolution des techs et des pratiques de l'industrie à travers les conférences Unity et GDC. Finalement, j'ai
-          perfectionné ma compréhension du langage C# à l’aide de l’ouvrage{" "}
-          <a
-            href="https://www.albahari.com/nutshell/"
-            target="_blank"
-            rel="noreferrer"
-            className={FormationStyles.link}
-          >
-            "C# in a nutshell"
-          </a>
-          .
-        </p>
-        <p>
-          Pour finir, afin de compléter ma compréhension du fonctionnement d’un
-          moteur de jeu, j’ai lu{" "}
-          <a
-            href="https://www.gameenginebook.com/"
-            target="_blank"
-            rel="noreferrer"
-            className={FormationStyles.link}
-          >
-            "Game Engine Architecture"
-          </a>{" "}
-          de Jason Gregory. Et j’ai comblé mes lacunes en mathématiques en
-          lisant la seconde édition de {" "}
-          <a
-            href="https://www.essentialmath.com/book.htm"
-            target="_blank"
-            rel="noreferrer"
-            className={FormationStyles.link}
-          >
-            "Essential Mathematics for Games and Interactive Application"
-          </a>{" "}
-          de James M.Van Verth et en suivant l'exeptionnelle chaine youtube {" "}
-          <a
-            href="https://www.youtube.com/@3blue1brown"
-            target="_blank"
-            rel="noreferrer"
-            className={FormationStyles.link}
-          >
-            "3Blue1Brown"
-          </a>{"."}
+          Suite à l'obtention de ma Licence 3 en 2026, je continue actuellement ma formation en Master 1 parcours informatique générale à l'université Grenoble Alpes pendant 
+          laquelle je compte me spécialiser dans le développement logiciel et le Cloud Computing.
         </p>
       </div>
     </div>

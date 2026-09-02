@@ -22,15 +22,16 @@ const About = () => {
               />
               <div className={AboutStyles.text}>
                 <p>
-                  Diplômé d'école de commerce en 2016, j'ai vécu 6 ans au Vietnam où j'ai acquis un niveau Bilingue en Anglais, découvert une autre culture de l'intérieur et appris le développement <strong>Unity</strong>.
+                  Actuellement en reprise d'études en informatique générale à l'université Grenoble Alpes, j'ai eu un parcours qui bien qu'atypique a été extrêmement enrichissant sur le plan personnel. 
+                </p>
+                <p>
+                  De formation commerciale, j'ai eu l'occasion de passer les premières années de ma vie professionnelle au Vietnam où suite à l'obtention de mon diplôme j'ai voulu tenté 
+                  l'aventure entreprenarial en créant ma propre entreprise de développement de jeux vidéo. 
+                  Bien que celà n'est pas eu le dénoument escompté, cette expérience a éveillé chez moi une véritable passion pour le monde de l'informatique et du développement logiciel.
                 </p>
 
                 <p>
-                  D'un naturel curieux et solutionniste, j'ai instantanément été stimulé par le développement de jeux vidéo et la programmation et n'ai eu cesse d'améliorer mes compétences au point de devenir un développeur professionnel.
-                </p>
-
-                <p style={{ marginBottom: 0 }}>
-                  Autonome, polyvalent et passionné, je cherche aujourd'hui à rejoindre une structure qui saura mettre à profit mon savoir-faire et me donnera l'opportunité de travailler sur des projets passionnants et formateurs.
+                  Je m'oriente donc aujourd'hui vers une carrière dans le développement logiciel et le Cloud Computing, avec l'objectif de mettre à profit mes compétences et mon expérience pour contribuer à des projets innovants et stimulants.
                 </p>
               </div>
               <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className={AboutStyles.downloadResumeButton}>
