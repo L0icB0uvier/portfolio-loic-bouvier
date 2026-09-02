@@ -38,6 +38,7 @@
 .contactLogo{
 
 }
+
 .infoWrapper {
   margin-top: 20px;
   display: flex;
@@ -71,8 +72,9 @@
   }
 
   .infoWrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 
   .infoWrapper {

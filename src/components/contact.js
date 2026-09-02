@@ -1,5 +1,4 @@
 import React from "react"
-import ContactInfo from "./contactInfo"
 import ContactButton from "./contactButton"
 import * as ContactStyles from "../css/contact.module.css"
 
@@ -17,20 +16,29 @@ const Contact = () => {
             N'hésitez pas à me contacter si mon profil vous intéresse.
           </p> */}
           <div className={ContactStyles.infoWrapper}>
-            <ul className={ContactStyles.infoContainer}>
-              <li className={ContactStyles.contactList}>
-                <ContactInfo title="Age" value="33 ans" />
-              </li>
-              <li className={ContactStyles.contactList}>
-                {" "}
-                <ContactInfo title="Tél" value="+33 7.49.90.59.45" />
-              </li>
-              <li className={ContactStyles.contactList}>
-                {" "}
-                <ContactInfo title="Lieu" value="Auvergne-Rhône-Alpes" />
-              </li>
-            </ul>
             <ul className={ContactStyles.linkContainer}>
+              <li className={ContactStyles.contactList}>
+                 <ContactButton
+                  url="tel:+33749905945"
+                  name="07.49.90.59.45"
+                  svg={
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      id="Layer_1"
+                      x="0"
+                      y="0"
+                      width={32}
+                      height={32}
+                      version="1.1"
+                      viewBox="0 0 29 29"
+                    >
+                      <path d="M9 2C9 1.44772 9.44772 1 10 1H14C14.5523 1 15 1.44772 15 2V3C15 3.55228 14.5523 4 14 4H10C9.44772 4 9 3.55228 9 3V2Z" fill="#000000"/>
+                      <rect x="5.75" y="1.75" width="12.5" height="20.5" rx="1.75" stroke="#000000" stroke-width="1.5"/>
+                      <path d="M9 19.5H15" stroke="#000000" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                  }
+                />
+              </li>
               <li className={ContactStyles.contactList}>
                 <ContactButton
                   url="mailto: loic.bouvier@protonmail.com"

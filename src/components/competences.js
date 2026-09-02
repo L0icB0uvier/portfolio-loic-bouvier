@@ -13,6 +13,18 @@ const Competences = () => {
           Mes expériences en tant que développeur et ma curiosité personnelle m'ont permis d'acquérir de solides compétences dans de nombreux 
           domaines liés au développement d'applications interactives et en informatique en général.
         </p>
+        <SkillTitle title="Informatique" />
+        <div className={CompetenceStyles.skillsContainer}>
+          <SkillBar skillName="C#" skillProcifiency={100} />
+          <SkillBar skillName="Java" skillProcifiency={80} />
+          <SkillBar skillName="C" skillProcifiency={80} />
+          <SkillBar skillName="C++" skillProcifiency={60} />
+          <SkillBar skillName="HLSL" skillProcifiency={60} />
+          <SkillBar skillName="Git" skillProcifiency={100} />
+          <SkillBar skillName="React" skillProcifiency={60} />
+          <SkillBar skillName="CSS/HTML" skillProcifiency={80} />
+          <SkillBar skillName="SQL" skillProcifiency={80} />
+        </div>
         <SkillTitle title="Game Engine" />
         <div className={CompetenceStyles.skillsContainer}>
           <SkillBar skillName="Unity" skillProcifiency={100} />
@@ -25,15 +37,6 @@ const Competences = () => {
           <SkillBar skillName="Prototyping" skillProcifiency={100} />
           <SkillBar skillName="UI Design" skillProcifiency={80} />
           <SkillBar skillName="Réalité virtuel" skillProcifiency={60} />
-        </div>
-        <SkillTitle title="Informatique" />
-        <div className={CompetenceStyles.skillsContainer}>
-          <SkillBar skillName="C#" skillProcifiency={100} />
-          <SkillBar skillName="C++" skillProcifiency={60} />
-          <SkillBar skillName="HLSL" skillProcifiency={60} />
-          <SkillBar skillName="Git" skillProcifiency={100} />
-          <SkillBar skillName="React" skillProcifiency={60} />
-          <SkillBar skillName="CSS/HTML" skillProcifiency={80} />
         </div>
         <SkillTitle title="3D" />
         <div className={CompetenceStyles.skillsContainer}>
