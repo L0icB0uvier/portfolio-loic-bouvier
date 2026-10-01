@@ -12,7 +12,7 @@ const Presentation = () => {
         </h1>
         
         <h2 className={IntroductionStyles.subtitle}>
-          Recherche Stage
+          Recherche Stage M1
         </h2>
 
         <p className={IntroductionStyles.description}>

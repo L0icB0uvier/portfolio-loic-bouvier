@@ -22,7 +22,7 @@ const About = () => {
               />
               <div className={AboutStyles.text}>
                 <p>
-                  Actuellement en reprise d'études en informatique générale à l'université Grenoble Alpes, j'ai eu un parcours qui bien qu'atypique a été extrêmement enrichissant sur le plan personnel. 
+                  Actuellement en reprise d'études en informatique générale à l'université Grenoble Alpes, j'ai eu un parcours qui, bien qu'atypique, a été extrêmement enrichissant sur le plan personnel. 
                 </p>
                 <p>
                   De formation commerciale, j'ai eu l'occasion de passer les premières années de ma vie professionnelle au Vietnam où suite à l'obtention de mon diplôme j'ai voulu tenté 
